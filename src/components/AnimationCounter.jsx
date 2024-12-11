@@ -56,11 +56,12 @@ const AnimatedCounter = ({ numsArray, decoration }) => {
   }, [progress, targetNumber]);
 
   return (
-    <div className="flex w-[28%] flex-col items-center justify-center">
-      <div className="text-[3.5vw] w-full text-black text-start">
-        {Math.round(count)} {decoration}
-      </div>
-      <div className="text-black w-full pt-1 text-[1.15vw]">
+    <div className="flex w-[28%] flex-col items-center justify-center text-center">
+      <h3 className="xxl:text-[67.2px] text-[3.5vw] w-full text-black text-center">
+        {JSON.stringify(Math.round(count))}
+        {decoration}
+      </h3>
+      <div className="text-black w-full pt-1 text-[1.15vw] xxl:text-[22.08px]">
         Lorem ipsum dolor.
         <span className="text-gray-500"> adipisicing elit, ipsam.</span>
       </div>

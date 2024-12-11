@@ -34,11 +34,30 @@ const Home = () => {
             <div className="w-full h-[42.5%] mt-8 flex justify-center">
               <div className="w-2/3 h-full rounded-3xl bg-white/10 min-w-[430px] backdrop-blur-sm border border-white/25"></div>
             </div>
-            <div className="w-full h-1/3 bg-white mt-14 rounded-tl-3xl"></div>
+            <div className="w-full h-[27%] bg-white mt-14 px-7 py-20 rounded-tl-3xl flex justify-evenly">
+              <AnimatedCounter numsArray={[7]} decoration={"M"} />
+              <AnimatedCounter numsArray={[250]} decoration={"+"} />
+              <AnimatedCounter numsArray={[120]} decoration={"k"} />
+            </div>
           </div>
         </div>
       </div>
-      <div className="h-[425px] bg-white"></div>
+      <div className="h-[425px] bg-white">
+        <div className="flex justify-between">
+          <h1 className="text-5xl text-gray-400">
+            <span className="text-black">Lorem,</span> ipsum dolor sit amet{" "}
+            <br />
+            consectetur adipisicing
+          </h1>
+          <h1 className="w-[45%] text-black">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+            soluta ipsam deserunt doloribus animi expedita at, eveniet nihil
+            aliquid iure adipisci cumque est ex fuga possimus enim dolorum, illo
+            sapiente dolore minima. Lorem ipsum dolor sit, amet consectetur
+            adipisicing elit. Aspernatur, pariatur.
+          </h1>
+        </div>
+      </div>
       <div className="h-screen max-h-[780px]"></div>
       <div className="h-screen bg-white"></div>
       <div className="h-[945px]"></div>
