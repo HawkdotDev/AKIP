@@ -21,7 +21,7 @@ const Blogs = () => {
         </div>
 
         <div className="pb-24">
-          <div className="h-[90vh] max-h-[885px] px-14 flex justify-between">
+          <div className="h-[90vh] max-h-[885px] px-14 flex justify-between flex-wrap">
             <div className="w-[32.5%] flex flex-col justify-between">
               <div className="h-[19.5%]">
                 <div className="flex justify-start gap-3">

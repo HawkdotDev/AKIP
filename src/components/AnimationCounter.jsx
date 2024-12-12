@@ -57,11 +57,11 @@ const AnimatedCounter = ({ numsArray, decoration }) => {
 
   return (
     <div className="flex w-[28%] flex-col items-center justify-center text-center">
-      <h3 className="xxl:text-[67.2px] text-[3.5vw] w-full lg:text-black text-white text-center">
+      <h3 className="xxl:text-[67.2px] lg:text-[3.5vw] text-[35px] w-full lg:text-black text-white text-center">
         {JSON.stringify(Math.round(count))}
         {decoration}
       </h3>
-      <div className="lg:text-black text-white w-full pt-1 text-[1.15vw] xxl:text-[22.08px]">
+      <div className="lg:text-black text-white w-full pt-1 lg:text-[1.15vw] text-[10px] xxl:text-[22.08px]">
         Lorem ipsum dolor. <br />
         <span className="lg:text-gray-500 text-gray-400"> adipisicing elit, ipsam.</span>
       </div>
