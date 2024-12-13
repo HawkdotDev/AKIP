@@ -5,9 +5,9 @@ const BrochureComponent = () => {
   const [showPreview, setShowPreview] = useState(false);
 
   return (
-    <div className="flex justify-center mt-12">
-      <div className="max-w-lg w-full">
-        <div className="flex justify-between mb-4 gap-8">
+    <div className="flex justify-center lg:justify-start mt-12">
+      <div className="">
+        <div className="flex justify-between lg:gap-11 gap-9 mb-4">
           <div className="relative items-center flex flex-col">
             <button
               aria-label="View Brochure"
@@ -32,7 +32,7 @@ const BrochureComponent = () => {
               View Brochure
             </button>
             {showPreview && (
-              <div className="absolute mt-14 bg-gray-200 p-4 rounded-3xl w-72 shadow-lg z-[105] h-80">
+              <div className="absolute mt-14 bg-gray-200 p-4 rounded-3xl w-72 shadow-lg z-[105] h-80 border-green-600 border">
                 <div className="flex justify-center items-center text-black">
                   <object
                     data="/assets/docs/Brochure.pdf"

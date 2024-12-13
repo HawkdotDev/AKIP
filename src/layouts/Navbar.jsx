@@ -2,7 +2,7 @@ import Logo from "../assets/images/Logo.png";
 
 const Navbar = () => {
   return (
-    <nav className="w-full max-w-[1920px] mx-auto flex justify-between items-center px-7 pt-2 fixed z-[99] bg-black/20 backdrop-blur-sm">
+    <nav className="w-full max-w-[1920px] mx-auto flex justify-between items-center px-7 pt-2 fixed z-[99] bg-black/25 backdrop-blur-sm">
       <a href="/">
         <img src={Logo} alt="AKIP logo" className="w-[72px] h-[72px]" />
       </a>

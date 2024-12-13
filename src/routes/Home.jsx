@@ -81,9 +81,9 @@ const Home = () => {
         </div>
         <div className="desktop w-full h-full absolute lg:flex justify-end hidden">
           <div className="w-1/2 h-full flex flex-col justify-center items-center">
-            <div className="w-[70%] h-[60%]">
-              <p className="text-gray-100">#1 Energy provider in the world</p>
-              <h3 className="text-center text-6xl pt-7 font-medium">
+            <div className="w-[80%] h-[60%] flex flex-col justify-end mb-28">
+              <p className="text-gray-100 lg:text-[1vw] xxl:text-[28.5px]">#1 Energy provider in the world</p>
+              <h3 className="text-6xl lg:text-[5.5vw] xxl:text-[120px] lg:pb-6 lg:pt-8 pt-7 font-medium text-white">
                 New Energy <br /> for the Future
               </h3>
               <BrochureComponent />

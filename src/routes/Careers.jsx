@@ -1,7 +1,7 @@
 const Careers = () => {
   return (
     <div className="bg-white">
-      <div className="relative md:h-[140vh] h-[190vh]">
+      <div className="relative md:h-[130vh] h-[190vh]">
         <div className="absolute h-screen w-full bg-green-400"></div>
         <div className="absolute h-full w-full px-9 py-20">
           <div className="w-full flex justify-between mt-16 mb-8 items-start">
