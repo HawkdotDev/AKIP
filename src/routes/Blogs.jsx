@@ -1,14 +1,12 @@
-// import BlogSection from "../components/BlogSection";
-
 const Blogs = () => {
   return (
     <>
       <div className="max-w-[1920px]">
-        <div className="flex pt-24 px-14 items-center pb-9">
-          <div className="w-1/2 text-5xl">
+        <div className="flex lg:flex-row flex-col pt-24 px-8 items-center pb-9">
+          <div className="lg:w-1/2 text-5xl">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
           </div>
-          <div className="w-1/2 text-sm">
+          <div className="lg:w-1/2 text-sm lg:m-0 mt-5">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dolorem,
             deserunt vel libero ab quibusdam nesciunt asperiores possimus nisi
             officiis nemo cum eaque quod vero natus et eius at blanditiis? Lorem
@@ -20,10 +18,10 @@ const Blogs = () => {
           </div>
         </div>
 
-        <div className="pb-24">
-          <div className="h-[90vh] max-h-[885px] px-14 flex justify-between flex-wrap">
-            <div className="w-[32.5%] flex flex-col justify-between">
-              <div className="h-[19.5%]">
+        <div className="xl:pb-12 pb-6">
+          <div className="xl:h-[90vh] xl:max-h-[785px] px-8 flex xl:flex-row flex-col justify-between flex-wrap">
+            <div className="xl:w-[32.5%] w-full h-[520px] xl:h-full flex flex-col justify-between">
+              <div className="xl:h-[19.5%]">
                 <div className="flex justify-start gap-3">
                   <a
                     href=""
@@ -39,13 +37,13 @@ const Blogs = () => {
                   </a>
                 </div>
               </div>
-              <div className="h-[79.5%] bg-slate-500 rounded-3xl relative overflow-hidden">
+              <div className="xl:h-[79.5%] h-[90%] bg-slate-500 rounded-3xl relative overflow-hidden">
                 <img
                   src=""
                   alt=""
                   className="bg-blue-600 h-full object-cover absolute"
                 />
-                <div className="absolute h-full flex flex-col justify-between">
+                <div className="absolute h-full flex flex-col justify-between w-full">
                   <div className="flex justify-end p-4">
                     <div className="hover:bg-black/40 border border-white w-16 h-16 rounded-full flex justify-center items-center">
                       <svg
@@ -66,14 +64,14 @@ const Blogs = () => {
                 </div>
               </div>
             </div>
-            <div className="w-[32.5%] flex flex-col justify-between">
+            <div className="xl:w-[32.5%] mt-4 xl:m-0 w-full h-[720px] xl:h-full flex flex-col justify-between">
               <div className="h-[48.5%] bg-cyan-300 rounded-3xl relative overflow-hidden">
                 <img
                   src=""
                   alt=""
                   className="bg-blue-600 h-full object-cover absolute"
                 />
-                <div className="absolute h-full flex flex-col justify-between">
+                <div className="absolute h-full flex flex-col justify-between w-full">
                   <div className="flex justify-end p-4">
                     <div className="hover:bg-black/40 border border-white w-16 h-16 rounded-full flex justify-center items-center">
                       <svg
@@ -95,13 +93,13 @@ const Blogs = () => {
               </div>
               <div className="h-[48.5%] bg-slate-500 rounded-3xl"></div>
             </div>
-            <div className="w-[32.5%] h-full flex flex-col justify-between bg-green-500 rounded-3xl relative overflow-hidden">
+            <div className="xl:w-[32.5%] w-full h-[520px] xl:m-0 mt-4 xl:h-full flex flex-col justify-between bg-green-500 rounded-3xl relative overflow-hidden">
               <img
                 src=""
                 alt=""
                 className="bg-blue-600 h-full object-cover absolute"
               />
-              <div className="absolute h-full flex flex-col justify-between">
+              <div className="absolute h-full flex flex-col justify-between w-full">
                 <div className="flex justify-end p-4">
                   <div className="hover:bg-black/40 border border-white w-16 h-16 rounded-full flex justify-center items-center">
                     <svg
@@ -124,11 +122,11 @@ const Blogs = () => {
           </div>
         </div>
 
-        <div className="h-48 bg-[#E6E6E6] flex items-center justify-center text-center text-5xl py-5">
+        <div className="h-48 bg-[#E6E6E6] flex items-center justify-center text-center text-5xl">
           Lorem ipsum dolor <br /> sit amet consectetur.
         </div>
 
-        <div className="px-14 py-24">
+        <div className="px-8 pb-8">
           <div className="flex justify-between mb-4 items-center">
             <div className="text-3xl">
               See our <br /> Recent Activities

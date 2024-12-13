@@ -1,23 +1,62 @@
+import { useState } from "react";
 import Logo from "../assets/images/Logo.png";
 
 const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  // const [openSubmenu, setOpenSubmenu] = useState(null);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+    // setOpenSubmenu(null); // Close any open submenu when main menu toggles
+  };
+
+  // const toggleSubmenu = (menu) => {
+  //   setOpenSubmenu(openSubmenu === menu ? null : menu);
+  // };
+
   return (
     <nav className="w-full max-w-[1920px] mx-auto flex justify-between items-center px-7 pt-2 fixed z-[99] bg-black/25 backdrop-blur-sm">
       <a href="/">
         <img src={Logo} alt="AKIP logo" className="w-[72px] h-[72px]" />
       </a>
-      <svg
-        width="64px"
-        height="64px"
-        viewBox="0 0 24 24"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
+
+      <button
+        onClick={toggleMenu}
         className="xl:hidden"
+        aria-label="Toggle menu"
       >
-        <path d="M5 6.5H19V8H5V6.5Z" fill="#ffffff" />
-        <path d="M5 16.5H19V18H5V16.5Z" fill="#ffffff" />
-        <path d="M5 11.5H19V13H5V11.5Z" fill="#ffffff" />
-      </svg>
+        {isMenuOpen ? (
+          <svg
+            width="64px"
+            height="64px"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="transition-transform duration-300"
+          >
+            <path
+              d="M6 18L18 6M6 6L18 18"
+              stroke="#ffffff"
+              strokeWidth="2"
+              strokeLinecap="round"
+            />
+          </svg>
+        ) : (
+          <svg
+            width="64px"
+            height="64px"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M5 6.5H19V8H5V6.5Z" fill="#ffffff" />
+            <path d="M5 16.5H19V18H5V16.5Z" fill="#ffffff" />
+            <path d="M5 11.5H19V13H5V11.5Z" fill="#ffffff" />
+          </svg>
+        )}
+      </button>
+
+
       <div className="hidden xl:flex justify-evenly space-x-4 gap-10">
         <a
           href="/"
