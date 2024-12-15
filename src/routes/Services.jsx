@@ -1,35 +1,11 @@
 // eslint-disable-next-line react/prop-types
 const ServiceCard = ({ title, description, icon, className = "" }) => (
-  <div className={`bg-gray-100 p-6 rounded-lg ${className}`}>
+  <div className={`bg-gray-200 p-6 rounded-3xl ${className}`}>
     <div className="mb-4">{icon}</div>
     <h3 className="text-xl font-semibold mb-3">{title}</h3>
     <p className="text-gray-600 mb-4">{description}</p>
-    <button className="inline-flex items-center text-white bg-green-500 px-4 py-2 rounded-md hover:bg-green-600 transition-colors">
+    <button className="inline-flex items-center text-white bg-green-500 px-4 py-2 rounded-3xl hover:bg-green-600 transition-colors">
       Learn More
-      <svg
-        className="w-4 h-4 ml-2"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M9 5l7 7-7 7"
-        />
-      </svg>
-    </button>
-  </div>
-);
-
-// eslint-disable-next-line react/prop-types
-const HeroCard = ({ title, description }) => (
-  <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-white/20">
-    <h3 className="text-xl font-semibold text-white mb-3">{title}</h3>
-    <p className="text-gray-200 mb-4 text-sm">{description}</p>
-    <button className="inline-flex items-center text-white bg-green-500 px-4 py-2 rounded-md hover:bg-green-600 transition-colors text-sm">
-      Register
       <svg
         className="w-4 h-4 ml-2"
         fill="none"
@@ -49,7 +25,7 @@ const HeroCard = ({ title, description }) => (
 
 const Services = () => {
   return (
-    <div className="w-full px-7 pt-24">
+    <div className="w-full px-7 pt-24 bg-white">
       {/* Hero Section */}
       <div className="relative h-[800px] mb-12">
         <div className="absolute inset-0 bg-slate-600 rounded-[35px] overflow-hidden">
@@ -59,50 +35,26 @@ const Services = () => {
             className="w-full h-full object-cover brightness-50"
           />
         </div>
-        <div className="relative h-full flex flex-col justify-center px-6 md:px-12 max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-            <div>
-              <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-                Services We Provide
-              </h1>
-              <p className="text-gray-200 mb-6 max-w-xl">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore.
-              </p>
-              <div className="flex flex-wrap gap-4">
-                <button className="bg-green-500 text-white px-6 py-2 rounded-md hover:bg-green-600 transition-colors">
-                  Get in touch
-                </button>
-                <button className="bg-white text-gray-800 px-6 py-2 rounded-md hover:bg-gray-100 transition-colors">
-                  Explore
-                </button>
-              </div>
-            </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <HeroCard
-                title="On-Site Solar Solutions"
-                description="Lorem ipsum dolor sit amet, consectetur elit, sed enim tempor nisi ex incididunt et dolore magna aliqua."
-              />
-              <HeroCard
-                title="Alternative Energy"
-                description="Lorem ipsum dolor sit amet, consectetur elit, sed enim tempor nisi ex incididunt et dolore magna aliqua."
-              />
-            </div>
-          </div>
+        <div className="relative h-full flex sm:flex-row flex-col justify-between xs:p-6 px-3 py-3">
+          <div className="sm:h-full h-[55%] sm:w-[64%] w-full bg-gray-700"></div>
 
-          {/* Stats */}
-          <div className="flex gap-12 mt-8">
-            <div className="text-white">
-              <div className="text-4xl font-bold mb-1">75%</div>
-              <div className="text-sm opacity-80">
-                Cost reduction in energy bill
+          <div className="sm:w-[35%] w-full sm:h-full h-[44.5%] flex sm:flex-col justify-between">
+
+            <div className="sm:h-[64%] h-full w-[59%] sm:w-full bg-green-500 rounded-3xl"></div>
+
+            <div className="sm:h-[35%] h-full w-[40%] sm:w-full backdrop-blur-sm bg-white/40 rounded-3xl lg:flex-row flex-col flex justify-around sm:justify-between p-4 text-white items-center">
+              <div className="lg:text-[4.25vw] text-[42px] xxl:text-[82px] w-1/2 text-center flex flex-col items-center">
+                75%
+                <p className="lg:text-[1.15vw] text-[11.5px] xxl:text-[22.5px] w-36 lg:w-auto">
+                  Lorem ipsum dolor <br /> sit amet consectetur.
+                </p>
               </div>
-            </div>
-            <div className="text-white">
-              <div className="text-4xl font-bold mb-1">16M</div>
-              <div className="text-sm opacity-80">
-                Our happy satisfied clients
+              <div className="lg:text-[4.25vw] text-[42px] xxl:text-[82px] w-1/2 text-center flex flex-col items-center">
+                16M
+                <p className="lg:text-[1.15vw] text-[11.5px] xxl:text-[22.5px] w-36 lg:w-auto">
+                  Lorem ipsum dolor <br /> sit amet consectetur.
+                </p>
               </div>
             </div>
           </div>
@@ -110,13 +62,13 @@ const Services = () => {
       </div>
 
       {/* Services Section */}
-      <div className="px-6 mb-12">
+      <div className="px-6 pb-12">
         <div className="mb-12 lg:flex justify-between">
           <h2 className="text-3xl font-semibold text-gray-700 mb-2 lg:w-[30%]">
             We are here for <br />{" "}
             <span className="font-bold">your Every Use</span>
           </h2>
-          <p className="text-gray-600 lg:w-[70%]">
+          <p className="text-gray-600 lg:w-[70%] lg:mt-0 mt-4">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed enim ad
             minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet

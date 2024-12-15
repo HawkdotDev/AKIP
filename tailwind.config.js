@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 import typography from "@tailwindcss/typography";
+import aspectRatio from '@tailwindcss/aspect-ratio';
 
 export default {
   content: [
@@ -63,6 +64,8 @@ export default {
       },
     },
     screens: {
+      'xs' : '444px',
+
       'sm': '640px',
       // => @media (min-width: 640px) { ... }
 
@@ -81,5 +84,5 @@ export default {
 
     },
   },
-  plugins: [typography],
-};
+  plugins: [typography, aspectRatio],
+}

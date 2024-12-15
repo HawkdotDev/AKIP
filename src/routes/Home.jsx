@@ -168,7 +168,7 @@ const Home = () => {
             <img
               src={maintainence}
               alt="Description of Image"
-              className="h-[369px] w-full object-fill rounded-2xl border border-white"
+              className="h-[369px] w-full object-cover rounded-2xl border border-white"
             />
             <h1 className="text-black text-3xl pt-2">
               <span className="text-gray-500">Lorem ipsum dolor</span>

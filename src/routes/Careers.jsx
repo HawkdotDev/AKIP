@@ -1,20 +1,31 @@
 const Careers = () => {
   return (
     <div className="bg-white">
-      <div className="relative md:h-[130vh] h-[190vh]">
-        <div className="absolute h-screen w-full bg-green-400"></div>
+      <div className="relative md:h-[130vh] sm:h-[190vh] xs:h-[200vh] h-[215vh]">
+        <div className="absolute h-screen w-full bg-green-400">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1661274151793-173c09ced789?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YWdyZWV8ZW58MHx8MHx8fDA%3D"
+            alt="Career image"
+            className="w-full h-full object-cover brightness-50"
+          />
+        </div>
         <div className="absolute h-full w-full px-9 py-20">
-          <div className="w-full flex justify-between mt-16 mb-8 items-start">
-            <div className="w-[30%] text-5xl flex items-start pr-4 ml-5">
-              Lorem ipsum dolor sit amet.
+          <div className="flex lg:flex-row flex-col pt-8 px-2 items-center pb-9 text-white">
+            <div className="lg:w-1/2 text-5xl">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             </div>
-            <div className="w-[70%]">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Excepturi dolores reprehenderit dignissimos dolorum nisi sint
-              autem officia aut sunt consequuntur maxime, nihil id, repellat
-              beatae, obcaecati dolore optio ipsum consequatur.
+            <div className="lg:w-1/2 text-sm lg:m-0 mt-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+              dolorem, deserunt vel libero ab quibusdam nesciunt asperiores
+              possimus nisi officiis nemo cum eaque quod vero natus et eius at
+              blanditiis? Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Iusto asperiores consequatur quam iure dolores expedita eius
+              ipsum exercitationem modi adipisci accusantium, saepe ea
+              voluptates! Eum? Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Expedita alias magnam odit.
             </div>
           </div>
+
           <div className="w-full md:h-[90vh] bg-slate-400 rounded-3xl px-6 py-8 flex flex-col items-center">
             <h1 className="mb-4 text-3xl lg:text-[2em]">
               <span className="text-gray-500">
