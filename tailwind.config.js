@@ -1,12 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 import typography from "@tailwindcss/typography";
-import aspectRatio from '@tailwindcss/aspect-ratio';
+import aspectRatio from "@tailwindcss/aspect-ratio";
 
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       typography: {
@@ -64,25 +61,28 @@ export default {
       },
     },
     screens: {
-      'xs' : '444px',
+      xs: "444px",
 
-      'sm': '640px',
+      ms: "480px",
+
+      sm: "640px",
       // => @media (min-width: 640px) { ... }
 
-      'md': '768px',
+      md: "768px",
       // => @media (min-width: 768px) { ... }
 
-      'lg': '1024px',
+      bm: "910px",
+
+      lg: "1024px",
       // => @media (min-width: 1024px) { ... }
 
-      'xl': '1280px',
+      xl: "1280px",
       // => @media (min-width: 1280px) { ... }
 
-      '2xl': '1536px',
+      "2xl": "1536px",
       // => @media (min-width: 1536px) { ... }
-      'xxl': "1920px",
-
+      xxl: "1920px",
     },
   },
   plugins: [typography, aspectRatio],
-}
+};

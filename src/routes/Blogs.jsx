@@ -146,67 +146,69 @@ const Blogs = () => {
               </a>
             </div>
           </div>
-          <div className="h-[400px] flex flex-col sm:flex-row justify-between space-y-4 sm:space-y-0">
-            <div className="h-full w-[49.5%] bg-green-500 rounded-3xl flex p-3 justify-between">
+          <div className="lg:h-[400px] sm:h-[800px] h-[500px] flex lg:flex-row flex-col justify-between space-y-4 sm:space-y-0">
+            <div className="lg:h-full h-[49.25%] lg:w-[49.5%] w-full bg-green-500 rounded-3xl flex p-3 justify-between">
               <div className="h-full w-[37.5%] bg-green-500 rounded-3xl"></div>
               <div className="h-full w-[49.5%] bg-slate-500 rounded-3xl"></div>
             </div>
-            <div className="h-full w-[24%] bg-orange-300 rounded-3xl relative overflow-hidden">
-              <img
-                src=""
-                alt=""
-                className="bg-blue-600 h-full object-cover absolute"
-              />
-              <div className="absolute h-full flex flex-col justify-between">
-                <div className="flex justify-end p-4">
-                  <div className="hover:bg-black/40 border border-white w-16 h-16 rounded-full flex justify-center items-center">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      height="32px"
-                      viewBox="0 -960 960 960"
-                      width="32px"
-                      fill="#e8eaed"
-                    >
-                      <path d="M214.87-141.91 140.78-216l456.65-456.65H351.52v-106h426v426h-106v-245.91L214.87-141.91Z" />
-                    </svg>
+            <div className="lg:w-1/2 lg:h-full h-[49.25%] w-full flex justify-between">
+              <div className="h-full w-[49.35%] bg-orange-300 rounded-3xl relative overflow-hidden">
+                <img
+                  src=""
+                  alt=""
+                  className="bg-blue-600 h-full object-cover absolute"
+                />
+                <div className="absolute h-full flex flex-col justify-between">
+                  <div className="flex justify-end p-4">
+                    <div className="hover:bg-black/40 border border-white w-16 h-16 rounded-full flex justify-center items-center">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="32px"
+                        viewBox="0 -960 960 960"
+                        width="32px"
+                        fill="#e8eaed"
+                      >
+                        <path d="M214.87-141.91 140.78-216l456.65-456.65H351.52v-106h426v426h-106v-245.91L214.87-141.91Z" />
+                      </svg>
+                    </div>
                   </div>
+                  <p className="p-4">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Earum deleniti delectus eius!
+                  </p>
                 </div>
-                <p className="p-4">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
-                  deleniti delectus eius!
-                </p>
               </div>
-            </div>
-            <div className="h-full w-[24%] bg-orange-300 rounded-3xl relative overflow-hidden">
-              <img
-                src=""
-                alt=""
-                className="bg-blue-600 h-full object-cover absolute"
-              />
-              <div className="absolute h-full flex flex-col justify-between">
-                <div className="flex justify-end p-4">
-                  <div className="hover:bg-black/40 border border-white w-16 h-16 rounded-full flex justify-center items-center">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      height="32px"
-                      viewBox="0 -960 960 960"
-                      width="32px"
-                      fill="#e8eaed"
-                    >
-                      <path d="M214.87-141.91 140.78-216l456.65-456.65H351.52v-106h426v426h-106v-245.91L214.87-141.91Z" />
-                    </svg>
+              <div className="h-full w-[49.35%] bg-orange-300 rounded-3xl relative overflow-hidden">
+                <img
+                  src=""
+                  alt=""
+                  className="bg-blue-600 h-full object-cover absolute"
+                />
+                <div className="absolute h-full flex flex-col justify-between">
+                  <div className="flex justify-end p-4">
+                    <div className="hover:bg-black/40 border border-white w-16 h-16 rounded-full flex justify-center items-center">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="32px"
+                        viewBox="0 -960 960 960"
+                        width="32px"
+                        fill="#e8eaed"
+                      >
+                        <path d="M214.87-141.91 140.78-216l456.65-456.65H351.52v-106h426v426h-106v-245.91L214.87-141.91Z" />
+                      </svg>
+                    </div>
                   </div>
+                  <p className="p-4">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Earum deleniti delectus eius!
+                  </p>
                 </div>
-                <p className="p-4">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
-                  deleniti delectus eius!
-                </p>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="p-14 bg-[#e6e6e6]">
+        {/* <div className="p-10 bg-[#e6e6e6]">
           <div className="p-5 bg-white rounded-3xl">
             <div className="flex justify-between mb-4 items-center">
               <div className="text-3xl">
@@ -227,9 +229,9 @@ const Blogs = () => {
                 </a>
               </div>
             </div>
-            <div className="h-[100vh] max-h-[900px] flex justify-between">
-              <div className="w-[29.5%] flex flex-col justify-between">
-                <div className="h-[65%] bg-slate-400 rounded-3xl relative overflow-hidden">
+            <div className="h-[100vh] max-h-[900px] flex lg:flex-row flex-col justify-between">
+              <div className="lg:w-[29.5%] w-full lg:h-full h-[29%] flex lg:flex-col flex-row justify-between bg-red-500">
+                <div className="lg:h-[68%] h-full bg-slate-400 rounded-3xl relative overflow-hidden">
                   <img
                     src=""
                     alt=""
@@ -255,7 +257,7 @@ const Blogs = () => {
                     </p>
                   </div>
                 </div>
-                <div className="h-[30%] bg-[#0EC66E] rounded-3xl"></div>
+                <div className="lg:h-[30%] h-full bg-[#0EC66E] rounded-3xl"></div>
               </div>
               <div className="w-[32.5%] flex flex-col justify-between">
                 <div className="h-[37.5%] bg-[#0EC66E] rounded-3xl "></div>
@@ -314,14 +316,15 @@ const Blogs = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
-        <div className="px-14 py-48">
-          <div className="h-[600px] bg-green-500 rounded-3xl flex p-3 justify-between">
-            <div className="h-full w-[37.5%] bg-green-500 rounded-3xl"></div>
-            <div className="h-full w-[49.5%] bg-slate-500 rounded-3xl"></div>
+        <div className="px-10 py-24">
+          <div className="h-[600px] bg-green-500 rounded-3xl sm:flex p-3 justify-between">
+            <div className="sm:h-full h-1/2 sm:w-[37.5%] w-full bg-green-500 rounded-3xl"></div>
+            <div className="sm:h-full h-1/2 sm:w-[49.5%] w-full bg-slate-500 rounded-3xl"></div>
           </div>
         </div>
+
       </div>
       <div className="relative w-full min-h-[300px] lg:min-h-[500px]">
         <div className="absolute inset-0 bg-gray-900/50">

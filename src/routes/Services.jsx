@@ -37,11 +37,46 @@ const Services = () => {
         </div>
 
         <div className="relative h-full flex sm:flex-row flex-col justify-between xs:p-6 px-3 py-3">
-          <div className="sm:h-full h-[55%] sm:w-[64%] w-full bg-gray-700"></div>
+          <div className="sm:h-full h-[55%] sm:w-[69%] w-full flex flex-col justify-around text-white md:p-7 p-1">
+            <h3 className="xl:text-9xl lg:text-8xl md:text-7xl sm:text-6xl text-5xl lg:w-2/3">
+              Lorem ipsum dolor sit
+            </h3>
+            <p className="lg:text-2xl md:text-xl sm:text-lg w-4/5">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum
+              incidunt accusantium aperiam eaque beatae amet corrupti, minima
+              animi similique sapiente? Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Enim, sed. Lorem ipsum dolor sit amet
+              consectetur, adipisicing elit.
+            </p>
+            <span>
+              <a
+                href="#"
+                className="bg-green-500 py-3 px-4 text-xl text-black rounded-3xl"
+              >
+                Get in touch
+              </a>
+            </span>
+          </div>
 
-          <div className="sm:w-[35%] w-full sm:h-full h-[44.5%] flex sm:flex-col justify-between">
-
-            <div className="sm:h-[64%] h-full w-[59%] sm:w-full bg-green-500 rounded-3xl"></div>
+          <div className="sm:w-[30%] w-full sm:h-full h-[44.5%] flex sm:flex-col justify-between">
+            <div className="sm:h-[64%] h-full w-[59%] sm:w-full bg-green-500 rounded-3xl 2xl:p-10 p-6  flex flex-col justify-between">
+              <h3 className="2xl:text-6xl xl:text-5xl lg:text-4xl ms:text-3xl text-xl">
+                Lorem ipsum dolor sit.
+              </h3>
+              <p className="2xl:text-xl lg:text-lg w-[97.5%] md:text-sm xs:text-xs text-[10px]">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Voluptates consequuntur provident quis totam quos atque,
+                necessitatibus aliquam distinctio. Minus explicabo non odio
+                aliquid atque dignissimos? Lorem ipsum dolor sit amet
+                consectetur adipisicing elit.
+              </p>
+              <a
+                href="#"
+                className="text-white bg-black rounded-full py-2 px-4 w-24"
+              >
+                Open
+              </a>
+            </div>
 
             <div className="sm:h-[35%] h-full w-[40%] sm:w-full backdrop-blur-sm bg-white/40 rounded-3xl lg:flex-row flex-col flex justify-around sm:justify-between p-4 text-white items-center">
               <div className="lg:text-[4.25vw] text-[42px] xxl:text-[82px] w-1/2 text-center flex flex-col items-center">
