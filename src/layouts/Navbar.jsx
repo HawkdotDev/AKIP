@@ -106,12 +106,12 @@ const Navbar = () => {
           >
             Media
           </a>
-          <a
+          {/* <a
             href="/About"
             className="text-white hover:text-green-500 text-lg drop-shadow-2xl"
           >
             About
-          </a>
+          </a> */}
           <a
             href="/Careers"
             className="text-white hover:text-green-500 text-lg drop-shadow-2xl"
@@ -127,7 +127,7 @@ const Navbar = () => {
         </div>
         <a
           href="/ContactUs"
-          className="px-4 py-[6px] bg-green-500 hover:bg-green-600 border border-white/45 text-white rounded-3xl hidden xl:block"
+          className="px-4 py-[6px] bg-green-500 hover:bg-green-600 border invisible border-white/45 text-white rounded-3xl hidden xl:block"
         >
           Contact Us
         </a>

@@ -54,11 +54,12 @@ const Careers = () => {
                   </svg>
                 </div>
                 <h3 className="text-2xl font-semibold mb-2">
-                  Fast Growing Company
+                  Excel in a Fast-Growing Environment
                 </h3>
                 <p className="text-gray-600 text-md">
-                  Join a dynamic environment with continuous growth
-                  opportunities and exciting challenges.
+                  Immerse yourself in a dynamic workplace where boundless growth
+                  opportunities meet exhilarating challenges. Become part of an
+                  organization that’s redefining success every step of the way.
                 </p>
               </div>
 
@@ -82,37 +83,12 @@ const Careers = () => {
                   </svg>
                 </div>
                 <h3 className="text-2xl font-semibold mb-2">
-                  Great Colleagues
+                  Collaborate with Exceptional Minds
                 </h3>
                 <p className="text-gray-600 text-md">
-                  Work alongside talented professionals in a collaborative and
-                  supportive atmosphere.
-                </p>
-              </div>
-
-              <div className="bg-white rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300 p-7 m-1 h-[92.5%]">
-                <div className="mb-4 text-green-500">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="52"
-                    height="52"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="1.25"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="lucide lucide-badge-alert"
-                  >
-                    <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
-                    <line x1="12" x2="12" y1="8" y2="12" />
-                    <line x1="12" x2="12.01" y1="16" y2="16" />
-                  </svg>
-                </div>
-                <h3 className="text-2xl font-semibold mb-2">Take Charge</h3>
-                <p className="text-gray-600 text-md">
-                  Own your projects and make impactful decisions in your role
-                  from day one.
+                  Work shoulder-to-shoulder with talented professionals who
+                  inspire excellence. Build meaningful connections in a culture
+                  that thrives on collaboration and mutual respect.
                 </p>
               </div>
 
@@ -136,11 +112,12 @@ const Careers = () => {
                   </svg>
                 </div>
                 <h3 className="text-2xl font-semibold mb-2">
-                  Dont Stop Learning
+                  Lead with Confidence, Impact with Purpose
                 </h3>
                 <p className="text-gray-600 text-md">
-                  Continuous learning opportunities with access to resources and
-                  mentorship.
+                  From the very beginning, take ownership of impactful projects.
+                  Shape strategies, make key decisions, and leave a lasting mark
+                  through your contributions.
                 </p>
               </div>
 
@@ -164,11 +141,12 @@ const Careers = () => {
                   </svg>
                 </div>
                 <h3 className="text-2xl font-semibold mb-2">
-                  Latest Technology Stack
+                  Pursue a Journey of Continuous Growth
                 </h3>
                 <p className="text-gray-600 text-md">
-                  Work with cutting-edge technologies and modern development
-                  tools.
+                  Empower your ambitions with endless learning opportunities.
+                  Access top-tier resources, expert mentorship, and a culture
+                  dedicated to nurturing your potential.
                 </p>
               </div>
 
@@ -191,10 +169,42 @@ const Careers = () => {
                     <line x1="12" x2="12.01" y1="16" y2="16" />
                   </svg>
                 </div>
-                <h3 className="text-2xl font-semibold mb-2">Domain Exposure</h3>
+                <h3 className="text-2xl font-semibold mb-2">
+                  Innovate with the Latest Technologies
+                </h3>
                 <p className="text-gray-600 text-md">
-                  Gain deep insights into various business domains and industry
-                  practices.
+                  Harness the power of state-of-the-art tools and advanced
+                  technologies. Be at the forefront of innovation in an
+                  ever-evolving landscape.
+                </p>
+              </div>
+
+              <div className="bg-white rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300 p-7 m-1 h-[92.5%]">
+                <div className="mb-4 text-green-500">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="52"
+                    height="52"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.25"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="lucide lucide-badge-alert"
+                  >
+                    <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
+                    <line x1="12" x2="12" y1="8" y2="12" />
+                    <line x1="12" x2="12.01" y1="16" y2="16" />
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-semibold mb-2">
+                  Expand Your Horizons Across Domains
+                </h3>
+                <p className="text-gray-600 text-md">
+                  Dive into diverse business landscapes and gain deep insights
+                  into industry practices. Build a versatile foundation for an
+                  extraordinary career.
                 </p>
               </div>
             </div>
@@ -221,10 +231,8 @@ const Careers = () => {
           </h2>
 
           <p className="text-sm sm:text-base lg:text-lg text-gray-200 max-w-md sm:max-w-xl lg:max-w-2xl mb-6 sm:mb-8 lg:mb-10">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eium
-            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-            volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-            ullamcorper suscipit lobortis nisl ut
+            Join us to unlock unparalleled opportunities, shape your future, and
+            be part of something extraordinary.
           </p>
 
           <button

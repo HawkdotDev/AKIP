@@ -79,13 +79,13 @@ const SolarCalculator = () => {
               value={consumption}
               onChange={(e) => setConsumption(e.target.value)}
               className="rounded-full py-2 px-4 w-1/2 bg-[#E6E6E6] text-gray-600 appearance-none border-none focus:outline-none"
-              placeholder="Enter units"
+              placeholder="Enter unit cost"
             />
 
             <select
               value={state}
               onChange={(e) => setState(e.target.value)}
-              className="rounded-full py-2 px-4 w-1/2 bg-[#E6E6E6] text-gray-600 appearance-none border-none focus:outline-none"
+              className="rounded-full py-2 px-4 w-1/2 bg-[#E6E6E6] text-gray-600 border-none focus:outline-none"
             >
               <option
                 value=""
@@ -143,13 +143,13 @@ const SolarCalculator = () => {
               value={budget}
               onChange={(e) => setBudget(e.target.value)}
               className="rounded-full py-2 px-4 w-1/2 bg-[#E6E6E6] text-black"
-              placeholder="Enter budget in Rs."
+              placeholder="Enter bill rupees"
             />
 
             <select
               value={state}
               onChange={(e) => setState(e.target.value)}
-              className="rounded-full py-2 px-4 w-1/2 bg-[#E6E6E6] text-gray-600 appearance-none border-none focus:outline-none"
+              className="!rounded-full py-2 px-4 w-1/2 bg-[#E6E6E6] text-gray-600 focus:outline-none"
             >
               <option
                 value=""

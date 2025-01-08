@@ -9,7 +9,7 @@ const QualityFeaturesSection = () => {
         </svg>
       ),
       title: "Layered security",
-      description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt"
+      description: "We prioritize your safety with a multi-layered security approach, ensuring robust system protection, secure installations, and continuous monitoring to keep your solar investment secure."
     },
     {
       icon: (
@@ -19,7 +19,7 @@ const QualityFeaturesSection = () => {
         </svg>
       ),
       title: "Quality control",
-      description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt"
+      description: "Our solar solutions undergo stringent quality control checks at every stage—from material selection to installation—guaranteeing top-notch performance and durability"
     },
     {
       icon: (
@@ -29,7 +29,7 @@ const QualityFeaturesSection = () => {
         </svg>
       ),
       title: "Quality control",
-      description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt"
+      description: "Our solar solutions undergo stringent quality control checks at every stage—from material selection to installation—guaranteeing top-notch performance and durability"
     },
     {
       icon: (
@@ -38,7 +38,7 @@ const QualityFeaturesSection = () => {
         </svg>
       ),
       title: "Reliable customer service",
-      description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt"
+      description: "Experience unparalleled customer support with our dedicated team, available 24/7 to address your concerns, provide guidance, and ensure seamless service at all times."
     },
     {
       icon: (
@@ -48,7 +48,7 @@ const QualityFeaturesSection = () => {
         </svg>
       ),
       title: "Maintenance manual book",
-      description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt"
+      description: "Simplify system upkeep with our comprehensive maintenance manual, featuring clear instructions, troubleshooting tips, and best practices to maximize your solar system's efficiency."
     },
     {
       icon: (
@@ -58,7 +58,7 @@ const QualityFeaturesSection = () => {
         </svg>
       ),
       title: "Maintenance manual book",
-      description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt"
+      description: "Simplify system upkeep with our comprehensive maintenance manual, featuring clear instructions, troubleshooting tips, and best practices to maximize your solar system's efficiency."
     }
   ];
 

@@ -30,7 +30,7 @@ const Services = () => {
       <div className="relative h-[800px] mb-12">
         <div className="absolute inset-0 bg-slate-600 rounded-[35px] overflow-hidden">
           <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Ministra_visita_planta_fotosolar_Cerro_Dominador_%2832536431795%29.jpg/1280px-Ministra_visita_planta_fotosolar_Cerro_Dominador_%2832536431795%29.jpg"
+            src="https://media.istockphoto.com/id/1127159370/photo/electrician-mounting-solar-panel-on-roof-of-modern-house.jpg?s=612x612&w=0&k=20&c=lKnuBZVpT7ysgzswsMTXn7fdxugSs0BnzKBbtphViIE="
             alt="Solar panels"
             className="w-full h-full object-cover brightness-50"
           />
@@ -104,20 +104,17 @@ const Services = () => {
             <span className="font-bold">your Every Use</span>
           </h2>
           <p className="text-gray-600 lg:w-[70%] lg:mt-0 mt-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed enim ad
-            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Officia fuga, reiciendis nisi soluta
-            inventore quidem saepe similique vitae facilis, ipsa nihil excepturi
-            ducimus distinctio cum sunt veniam quam doloribus. Culpa autem
-            reiciendis omnis harum blanditiis vel dolores quis veritatis.
+            At Antyodya Ujas, we provide innovative solar energy solutions
+            tailored to power your homes and businesses efficiently. From
+            installation to maintenance, we ensure sustainable energy for a
+            brighter future.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <ServiceCard
             title="Captive Solar Project"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            description="Leverage dedicated solar energy solutions tailored for businesses, ensuring uninterrupted power supply, cost efficiency, and sustainability."
             icon={
               <svg
                 className="w-8 h-8 text-green-500"
@@ -137,7 +134,7 @@ const Services = () => {
 
           <ServiceCard
             title="Open Access Project"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            description="Explore the benefits of solar power through open-access platforms, enabling industries to source clean energy directly from solar producers."
             icon={
               <svg
                 className="w-8 h-8 text-green-500"
@@ -157,7 +154,7 @@ const Services = () => {
 
           <ServiceCard
             title="OPEX Solutions"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            description="Adopt operational expenditure models for solar installations, minimizing upfront costs and maximizing returns on renewable energy investments."
             icon={
               <svg
                 className="w-8 h-8 text-green-500"
@@ -177,7 +174,7 @@ const Services = () => {
 
           <ServiceCard
             title="BESS System"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            description="Integrate Battery Energy Storage Systems (BESS) to optimize solar power usage, enabling energy storage and reliable backup solutions for enhanced efficiency."
             icon={
               <svg
                 className="w-8 h-8 text-green-500"
@@ -197,7 +194,7 @@ const Services = () => {
 
           <ServiceCard
             title="IOT"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            description="Harness the Internet of Things (IoT) for intelligent solar energy management, enabling real-time monitoring, data analytics, and enhanced system performance. Rooftop solar project"
             icon={
               <svg
                 className="w-8 h-8 text-green-500"

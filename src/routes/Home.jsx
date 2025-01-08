@@ -6,6 +6,7 @@ import QualityFeaturesSection from "../components/Qfs";
 import ImageCarousel from "../components/ImageCaroursel";
 import ServicesGrid from "../components/ServicesGrid";
 import BrochureComponent from "../components/BrochureComponent";
+import ShowcaseScroll from "../components/ShowcaseScroll";
 
 const Home = () => {
   return (
@@ -26,7 +27,7 @@ const Home = () => {
             <BrochureComponent />
           </div>
           <div className="w-full h-2/5 mb-20 px-[10%] flex flex-col justify-end items-center">
-            <div className="card w-full h-[85%] backdrop-blur-sm bg-white/15 rounded-3xl max-w-[412px] p-3 min-w-[400px]">
+            {/* <div className="card w-full h-[85%] backdrop-blur-sm bg-white/15 rounded-3xl max-w-[412px] p-3 min-w-[400px]">
               <div className="w-full h-[62.5%] flex justify-between">
                 <img
                   src={maintainence}
@@ -67,14 +68,29 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
           <div className="w-full h-[120px] flex justify-between">
             <div className="w-[10%] h-full bg-white rounded-tr-xl"></div>
             <div className="w-[80%] h-full flex justify-evenly">
-              <AnimatedCounter numsArray={[7]} decoration={"M"} />
-              <AnimatedCounter numsArray={[250]} decoration={"+"} />
-              <AnimatedCounter numsArray={[120]} decoration={"k"} />
+              <AnimatedCounter
+                numsArray={[7]}
+                decoration={"M"}
+                greytext="parts of the world"
+                blacktext="Employees work in all"
+              />
+              <AnimatedCounter
+                numsArray={[250]}
+                decoration={"+"}
+                greytext={"worldwide"}
+                blacktext={"Project completed"}
+              />
+              <AnimatedCounter
+                numsArray={[120]}
+                decoration={"k"}
+                greytext="parts of the world"
+                blacktext="Employees work in all"
+              />
             </div>
             <div className="w-[10%] h-full bg-white rounded-tl-xl"></div>
           </div>
@@ -82,7 +98,9 @@ const Home = () => {
         <div className="desktop w-full h-full absolute lg:flex justify-end hidden">
           <div className="w-1/2 h-full flex flex-col justify-center items-center">
             <div className="w-[80%] h-[60%] flex flex-col justify-end mb-28">
-              <p className="text-gray-100 lg:text-[1vw] xxl:text-[28.5px]">#1 Energy provider in the world</p>
+              <p className="text-gray-100 lg:text-[1vw] xxl:text-[28.5px]">
+                #1 Energy provider in the world
+              </p>
               <h3 className="text-6xl lg:text-[5.5vw] xxl:text-[120px] lg:pb-6 lg:pt-8 pt-7 font-medium text-white">
                 New Energy <br /> for the Future
               </h3>
@@ -91,7 +109,7 @@ const Home = () => {
           </div>
           <div className="w-1/2 h-full flex flex-col justify-end">
             <div className="w-full h-[42.5%] mt-8 flex justify-center">
-              <div className="w-2/3 h-full rounded-3xl bg-white/10 min-w-[475px] max-w-[550px] min-h-[345px] backdrop-blur-sm border border-white/25 p-3">
+              {/* <div className="card w-2/3 h-full rounded-3xl bg-white/10 min-w-[475px] max-w-[550px] min-h-[345px] backdrop-blur-sm border border-white/25 p-3">
                 <div className="w-full h-[62.5%] flex justify-between">
                   <img
                     src={maintainence}
@@ -132,29 +150,42 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
             <div className="w-full h-[27%] bg-white mt-14 rounded-tl-3xl flex justify-evenly">
-              <AnimatedCounter numsArray={[7]} decoration={"M"} />
-              <AnimatedCounter numsArray={[250]} decoration={"+"} />
-              <AnimatedCounter numsArray={[120]} decoration={"k"} />
+              <AnimatedCounter
+                numsArray={[7]}
+                decoration={"M"}
+                greytext="parts of the world"
+                blacktext="Employees work in all"
+              />
+              <AnimatedCounter
+                numsArray={[250]}
+                decoration={"+"}
+                greytext={"worldwide"}
+                blacktext={"Project completed"}
+              />
+              <AnimatedCounter
+                numsArray={[120]}
+                decoration={"k"}
+                greytext="parts of the world"
+                blacktext="Employees work in all"
+              />
             </div>
           </div>
         </div>
       </div>
       <div className="bg-white px-8 lg:py-28 py-16 ">
         <div className="lg:flex justify-between">
-          <h1 className="text-5xl text-gray-400 lg:w-[35%]">
-            <span className="text-black">Lorem,</span> ipsum dolor sit amet{" "}
+          <h1 className="text-4xl text-gray-400 lg:w-[35%]">
+            <span className="text-black">Profit</span> & Growth
             <br />
-            consectetur adipisicing
+            Simplified
           </h1>
           <h1 className="lg:w-[55%] text-black text-xl lg:p-0 pt-5">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
-            soluta ipsam deserunt doloribus animi expedita at, eveniet nihil
-            aliquid iure adipisci cumque est ex fuga possimus enim dolorum, illo
-            sapiente dolore minima. Lorem ipsum dolor sit, amet consectetur
-            adipisicing elit. Aspernatur, pariatur.
+            At AKIP, we make solar simple. With expert support and reliable
+            solutions, we help homes and businesses go green, cut costs, and
+            embrace energy independence.
           </h1>
         </div>
       </div>
@@ -170,24 +201,24 @@ const Home = () => {
               alt="Description of Image"
               className="h-[369px] w-full object-cover rounded-2xl border border-white"
             />
-            <h1 className="text-black text-3xl pt-2">
-              <span className="text-gray-500">Lorem ipsum dolor</span>
-              <br /> consectetur adipisicing.
+            <h1 className="text-black text-3xl pt-2 w-[90%]">
+              <span className="text-gray-500">Got Questions?</span>
+              <br /> We’re Just One Click Away
             </h1>
             <p className="text-wrap mt-10 text-black text-lg">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
               dolore harum iste!
             </p>
-            <button className="bg-green-400 text-white p-2 rounded-full mt-10 px-8 w-[40%]">
+            <button className="bg-green-400 text-white p-2 rounded-full mt-10 px-8 w-[50%]">
               Get in touch
             </button>
           </div>
         </div>
       </div>
 
-      <div className="md:h-[625px] bg-white md:flex items-center justify-center md:px-9 lg:px-10 px-8 py-10">
+      <div className="md:h-[625px] bg-white md:flex items-center justify-center md:px-9 lg:px-16 px-8 py-10">
         <ServicesGrid />
-        <div className="h-full md:w-[50%] md:pl-6 pt-10">
+        <div className="h-full md:w-[50%] md:pl-6 md:pt-0 pt-4">
           <img
             src={maintainence}
             alt="Description of Image"
@@ -196,9 +227,8 @@ const Home = () => {
         </div>
       </div>
 
-      {/* <div className="h-[945px]"> */}
       <QualityFeaturesSection />
-      {/* </div> */}
+      <ShowcaseScroll />
       <div className="lg:p-16 py-16 md:px-10 px-6 bg-[#FFFFFF] flex flex-col items-center justify-center">
         <h1 className="text-gray-500 text-4xl text-center mb-8">
           <span className="text-black">Lorem ipsum dolor,</span>
@@ -206,7 +236,7 @@ const Home = () => {
         </h1>
         <ImageCarousel />
       </div>
-      <div className="px-28 py-8">
+      {/* <div className="px-28 py-8">
         <div className="bg-gray-100 rounded-lg p-8 w-full mx-auto my-4">
           <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
             <div className="text-center md:text-left space-y-2">
@@ -237,7 +267,7 @@ const Home = () => {
             </svg>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };
