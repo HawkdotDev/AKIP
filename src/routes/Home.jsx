@@ -216,9 +216,9 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="md:h-[625px] bg-white md:flex items-center justify-center md:px-9 lg:px-16 px-8 py-10">
+      <div className="md:h-[600px] bg-white md:flex items-center justify-center md:px-9 lg:px-16 px-8 py-10">
         <ServicesGrid />
-        <div className="h-full md:w-[50%] md:pl-6 md:pt-0 pt-4">
+        <div className="h-full md:w-[40%] md:pl-6 md:pt-0 pt-4">
           <img
             src={maintainence}
             alt="Description of Image"

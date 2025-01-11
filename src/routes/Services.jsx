@@ -1,25 +1,9 @@
 // eslint-disable-next-line react/prop-types
 const ServiceCard = ({ title, description, icon, className = "" }) => (
-  <div className={`bg-gray-200 p-6 rounded-3xl ${className}`}>
+  <div className={`bg-gray-200 p-9 rounded-3xl aspect-1 ${className}`}>
     <div className="mb-4">{icon}</div>
     <h3 className="text-xl font-semibold mb-3">{title}</h3>
     <p className="text-gray-600 mb-4">{description}</p>
-    <button className="inline-flex items-center text-white bg-green-500 px-4 py-2 rounded-3xl hover:bg-green-600 transition-colors">
-      Learn More
-      <svg
-        className="w-4 h-4 ml-2"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M9 5l7 7-7 7"
-        />
-      </svg>
-    </button>
   </div>
 );
 
@@ -58,7 +42,7 @@ const Services = () => {
             </span>
           </div>
 
-          <div className="sm:w-[30%] w-full sm:h-full h-[44.5%] flex sm:flex-col justify-between">
+          <div className="sm:w-[30%] w-full sm:h-full h-[44.5%] flex sm:flex-col justify-between invisible">
             <div className="sm:h-[64%] h-full w-[59%] sm:w-full bg-green-500 rounded-3xl 2xl:p-10 p-6  flex flex-col justify-between">
               <h3 className="2xl:text-6xl xl:text-5xl lg:text-4xl ms:text-3xl text-xl">
                 Lorem ipsum dolor sit.
@@ -111,7 +95,7 @@ const Services = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 2xl:px-36 xl:px-24">
           <ServiceCard
             title="Captive Solar Project"
             description="Leverage dedicated solar energy solutions tailored for businesses, ensuring uninterrupted power supply, cost efficiency, and sustainability."

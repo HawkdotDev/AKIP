@@ -1,24 +1,46 @@
 import { useState } from "react";
-// import CustomAlert from './CustomAlert';
 
 const SolarCalculator = () => {
   const [selectedOption, setSelectedOption] = useState(
-    "Monthly Electricity Bill"
+    "Monthly Electricity Consumption Units"
   );
   const [roofArea, setRoofArea] = useState("");
   const [roofAreaPercentage, setRoofAreaPercentage] = useState("");
   const [consumption, setConsumption] = useState("");
-  const [budget, setBudget] = useState("");
-  const [state, setState] = useState("");
   const [customerType, setCustomerType] = useState("");
   const [electricityCost, setElectricityCost] = useState("");
+  const [result, setResult] = useState(null);
 
   const handleOptionChange = (option) => {
     setSelectedOption(option);
     setRoofArea("");
     setRoofAreaPercentage("");
     setConsumption("");
-    setBudget("");
+    setResult(null);
+  };
+
+  const calculate = () => {
+    let annualSaving = 0;
+
+    if (selectedOption === "Monthly Electricity Consumption Units") {
+      const totalUnitsPerAnnum = 12 * 100; // Assuming 100 units per month for simplicity
+      const monthlyAvg = 100; // Assuming monthly average is 100 units
+
+      if (consumption && electricityCost) {
+        annualSaving =
+          totalUnitsPerAnnum * (consumption / monthlyAvg) * electricityCost;
+      }
+    } else if (selectedOption === "Total Area of the Rooftop") {
+      const totalUnitsPerAnnum = 12 * 100; // Assuming 100 units per month for simplicity
+
+      if (roofArea && electricityCost) {
+        const availableArea = parseFloat(roofArea);
+        annualSaving =
+          (availableArea / 100) * totalUnitsPerAnnum * electricityCost;
+      }
+    }
+
+    setResult(annualSaving ? annualSaving.toFixed(2) : "Invalid Input");
   };
 
   return (
@@ -32,7 +54,6 @@ const SolarCalculator = () => {
       {/* Selection Buttons */}
       <div className="mb-8 flex flex-wrap justify-center gap-4">
         {[
-          { label: "Monthly Electricity Bill" },
           { label: "Monthly Electricity Consumption Units" },
           { label: "Total Area of the Rooftop" },
         ].map(({ label }) => (
@@ -81,122 +102,6 @@ const SolarCalculator = () => {
               className="rounded-full py-2 px-4 w-1/2 bg-[#E6E6E6] text-gray-600 appearance-none border-none focus:outline-none"
               placeholder="Enter unit cost"
             />
-
-            <select
-              value={state}
-              onChange={(e) => setState(e.target.value)}
-              className="rounded-full py-2 px-4 w-1/2 bg-[#E6E6E6] text-gray-600 border-none focus:outline-none"
-            >
-              <option
-                value=""
-                disabled
-                className="text-gray-400 rounded-b-full"
-              >
-                Select State
-              </option>
-              <option value="andaman">Andaman and Nicobar Islands</option>
-              <option value="andhra">Andhra Pradesh</option>
-              <option value="arunachal">Arunachal Pradesh</option>
-              <option value="assam">Assam</option>
-              <option value="bihar">Bihar</option>
-              <option value="chandigarh">Chandigarh</option>
-              <option value="chhattisgarh">Chhattisgarh</option>
-              <option value="dadra_nagar_haveli">
-                Dadra and Nagar Haveli and Daman and Diu
-              </option>
-              <option value="daman">Daman and Diu</option>
-              <option value="delhi">Delhi</option>
-              <option value="goa">Goa</option>
-              <option value="gujarat">Gujarat</option>
-              <option value="haryana">Haryana</option>
-              <option value="himachal">Himachal Pradesh</option>
-              <option value="jharkhand">Jharkhand</option>
-              <option value="karnataka">Karnataka</option>
-              <option value="kerala">Kerala</option>
-              <option value="lakshadweep">Lakshadweep</option>
-              <option value="madhya_pradesh">Madhya Pradesh</option>
-              <option value="maharashtra">Maharashtra</option>
-              <option value="manipur">Manipur</option>
-              <option value="meghalaya">Meghalaya</option>
-              <option value="mizoram">Mizoram</option>
-              <option value="nagaland">Nagaland</option>
-              <option value="odisha">Odisha</option>
-              <option value="punjab">Punjab</option>
-              <option value="rajasthan">Rajasthan</option>
-              <option value="sikkim">Sikkim</option>
-              <option value="tamil_nadu">Tamil Nadu</option>
-              <option value="telangana">Telangana</option>
-              <option value="tripura">Tripura</option>
-              <option value="uttar_pradesh">Uttar Pradesh</option>
-              <option value="uttarakhand">Uttarakhand</option>
-              <option value="west_bengal">West Bengal</option>
-
-              {/* Add other options as needed */}
-            </select>
-          </div>
-        )}
-
-        {selectedOption === "Monthly Electricity Bill" && (
-          <div className="mb-8 flex gap-4">
-            <input
-              type="text"
-              value={budget}
-              onChange={(e) => setBudget(e.target.value)}
-              className="rounded-full py-2 px-4 w-1/2 bg-[#E6E6E6] text-black"
-              placeholder="Enter bill rupees"
-            />
-
-            <select
-              value={state}
-              onChange={(e) => setState(e.target.value)}
-              className="!rounded-full py-2 px-4 w-1/2 bg-[#E6E6E6] text-gray-600 focus:outline-none"
-            >
-              <option
-                value=""
-                disabled
-                className="text-gray-400 rounded-b-full"
-              >
-                Select State
-              </option>
-              <option value="andaman">Andaman and Nicobar Islands</option>
-              <option value="andhra">Andhra Pradesh</option>
-              <option value="arunachal">Arunachal Pradesh</option>
-              <option value="assam">Assam</option>
-              <option value="bihar">Bihar</option>
-              <option value="chandigarh">Chandigarh</option>
-              <option value="chhattisgarh">Chhattisgarh</option>
-              <option value="dadra_nagar_haveli">
-                Dadra and Nagar Haveli and Daman and Diu
-              </option>
-              <option value="daman">Daman and Diu</option>
-              <option value="delhi">Delhi</option>
-              <option value="goa">Goa</option>
-              <option value="gujarat">Gujarat</option>
-              <option value="haryana">Haryana</option>
-              <option value="himachal">Himachal Pradesh</option>
-              <option value="jharkhand">Jharkhand</option>
-              <option value="karnataka">Karnataka</option>
-              <option value="kerala">Kerala</option>
-              <option value="lakshadweep">Lakshadweep</option>
-              <option value="madhya_pradesh">Madhya Pradesh</option>
-              <option value="maharashtra">Maharashtra</option>
-              <option value="manipur">Manipur</option>
-              <option value="meghalaya">Meghalaya</option>
-              <option value="mizoram">Mizoram</option>
-              <option value="nagaland">Nagaland</option>
-              <option value="odisha">Odisha</option>
-              <option value="punjab">Punjab</option>
-              <option value="rajasthan">Rajasthan</option>
-              <option value="sikkim">Sikkim</option>
-              <option value="tamil_nadu">Tamil Nadu</option>
-              <option value="telangana">Telangana</option>
-              <option value="tripura">Tripura</option>
-              <option value="uttar_pradesh">Uttar Pradesh</option>
-              <option value="uttarakhand">Uttarakhand</option>
-              <option value="west_bengal">West Bengal</option>
-
-              {/* Add other options as needed */}
-            </select>
           </div>
         )}
 
@@ -239,13 +144,22 @@ const SolarCalculator = () => {
           </div>
         </div>
 
-        <button
-          type="button"
-          onClick={() => alert("your calculated value")}
-          className="bg-green-500 text-white border-black hover:text-slate-700 px-8 py-2 text-xl rounded-full hover:bg-green-400 transition duration-200 mt-3"
-        >
-          Calculate
-        </button>
+        <div className="flex items-center gap-4 mt-6">
+          <button
+            type="button"
+            onClick={calculate}
+            className="bg-green-500 text-white border-black hover:text-slate-700 px-8 py-2 text-xl rounded-full hover:bg-green-400 transition duration-200"
+          >
+            Calculate
+          </button>
+
+          {/* Display Result */}
+          {result && (
+            <div className="bg-gray-100 p-4 rounded-4xl shadow-md text-green-700 font-bold text-lg">
+              Annual Saving: Rs. {result}
+            </div>
+          )}
+        </div>
       </form>
     </div>
   );

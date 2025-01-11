@@ -61,16 +61,16 @@ const Navbar = () => {
             Home
           </a>
           <a
-            href="/Blogs"
+            href="/About"
             className="text-white hover:text-green-500 text-lg drop-shadow-2xl"
           >
-            Blogs
+            About
           </a>
           <div className="relative group">
             <a href="/Services" className="text-white text-lg drop-shadow-2xl">
               Services
             </a>
-            <div className="absolute left-0 hidden group-hover:flex flex-col bg-white text-black py-2 rounded shadow-lg w-[200px] border border-black">
+            <div className="absolute left-0 hidden group-hover:flex flex-col bg-white text-black py-2 rounded-xl shadow-lg w-[200px] border border-black">
               <a
                 href="/Services/Captive-Solar-Project"
                 className="px-4 py-2 hover:bg-gray-200"
@@ -101,22 +101,22 @@ const Navbar = () => {
             </div>
           </div>
           <a
-            href="/Media"
+            href="/Blogs"
             className="text-white hover:text-green-500 text-lg drop-shadow-2xl"
           >
-            Media
+            Blogs
           </a>
-          {/* <a
-            href="/About"
-            className="text-white hover:text-green-500 text-lg drop-shadow-2xl"
-          >
-            About
-          </a> */}
           <a
             href="/Careers"
             className="text-white hover:text-green-500 text-lg drop-shadow-2xl"
           >
             Careers
+          </a>
+          <a
+            href="/Media"
+            className="text-white hover:text-green-500 text-lg drop-shadow-2xl"
+          >
+            Media
           </a>
           <a
             href="/ContactUs"
