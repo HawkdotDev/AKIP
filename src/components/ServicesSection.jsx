@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import arrow from "../assets/SVGs/move-up-right.svg";
 
 const ServicesSection = ({

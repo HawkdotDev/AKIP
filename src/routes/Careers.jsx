@@ -9,8 +9,8 @@ const Careers = () => {
             className="w-full h-full object-cover brightness-50"
           />
         </div>
-        <div className="absolute h-full w-full px-9 py-48">
-          <div className="flex lg:flex-row flex-col pt-8 px-2 items-center pb-9 text-white">
+        <div className="absolute h-full w-full px-9 py-32">
+          <div className="flex lg:flex-row flex-col px-2 my-14 mb-24 items-center text-white">
             <div className="lg:w-1/2 text-5xl">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             </div>

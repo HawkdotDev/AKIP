@@ -3,22 +3,22 @@ const ServicesGrid = () => {
     {
       id: "01",
       title: "Solar panels for home",
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores eum ad, quaerat animi eligendi aperiam.",
+      text: "Explore reliable and cost-effective solar solutions designed to power your home efficiently while reducing energy costs.",
     },
     {
       id: "02",
       title: "Solar panels for industry",
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores eum ad, quaerat animi eligendi aperiam.",
+      text: "Optimize your business operations with industrial-grade solar systems tailored for sustainability and high performance.",
     },
     {
       id: "03",
       title: "Solar panels for chargers",
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores eum ad, quaerat animi eligendi aperiam.",
+      text: "Discover portable and eco-friendly solar charging solutions for your devices, keeping you powered anywhere.",
     },
     {
       id: "04",
       title: "Wind power generator",
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores eum ad, quaerat animi eligendi aperiam.",
+      text: "Harness renewable wind energy with efficient and sustainable power generation systems for various applications.",
     },
   ];
 
@@ -35,12 +35,12 @@ const ServicesGrid = () => {
                 {service.id}
               </span>
               <div className="space-y-3 md:space-y-4">
-                <h3 className="text-base md:text-xl font-semibold mt-3 ">
+                <h3 className="text-md xl:text-lg 2xl:text-xl font-semibold mt-3 ">
                   {service.title}
                 </h3>
               </div>
             </div>
-            <p className="inline-flex items-center space-x-2 text-sm md:text-lg text-gray-600 hover:text-gray-900 transition-colors">
+            <p className="inline-flex items-center space-x-2 text-xs lg:text-sm xl:text-md 2xl:text-lg text-gray-600 hover:text-gray-900 transition-colors">
               {service.text}
             </p>
           </div>
