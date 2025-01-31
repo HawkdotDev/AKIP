@@ -8,7 +8,9 @@ const Footer = () => {
           <div>
             <h2 className="text-3xl font-bold mb-4">
               Its time to support zero pollution,
-              <span className="block text-gray-500">with renewable resources</span>
+              <span className="block text-gray-500">
+                with renewable resources
+              </span>
             </h2>
             <div className="flex flex-col sm:flex-row gap-4 mt-4">
               <div className="flex items-center gap-2">
@@ -21,11 +23,11 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          
+
           {/* Right side - Lorem ipsum and button */}
           <div className="flex flex-col items-start md:items-end">
             <p className="text-gray-400 mb-4 md:text-right max-w-md">
-              Lorem ipsum dolor sit amet, consecteteur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+            Empowering a sustainable future with clean, renewable energy. Join us in making a positive impact on the planet through innovative solar solutions.
             </p>
             <button className="bg-white text-black px-6 py-2 rounded-full hover:bg-gray-200 transition-colors flex items-center gap-2">
               Get in touch
@@ -38,16 +40,26 @@ const Footer = () => {
         <div className="border-t border-gray-800 pt-6 flex flex-col md:flex-row justify-between items-center">
           {/* Navigation links */}
           <nav className="flex gap-6 mb-4 md:mb-0">
-            <a href="/" className="hover:text-white transition-colors">Home</a>
-            <a href="/About" className="hover:text-white transition-colors">About</a>
+            <a href="/" className="hover:text-white transition-colors">
+              Home
+            </a>
+            <a href="/About" className="hover:text-white transition-colors">
+              About
+            </a>
             {/* <a href="/Features" className="hover:text-white transition-colors">Features</a> */}
-            <a href="/Services" className="hover:text-white transition-colors">Services</a>
+            <a href="/Services" className="hover:text-white transition-colors">
+              Services
+            </a>
             {/* <a href="/Contact" className="hover:text-white transition-colors">Contact</a> */}
           </nav>
-          
+
           {/* Social media icons */}
           <div className="flex gap-4">
-            <a href="https://www.linkedin.com/" className="w-8 h-8 rounded-full border border-gray-600 flex items-center justify-center hover:border-white transition-colors">
+            <button className="bg-white text-black px-6 py-2 rounded-full hover:bg-gray-200 transition-colors flex items-center gap-2">
+              Linkedin
+              <span className="inline-block ml-1">→</span>
+            </button>
+            {/* <a href="https://www.linkedin.com/" className="w-8 h-8 rounded-full border border-gray-600 flex items-center justify-center hover:border-white transition-colors">
               <span className="sr-only">LinkedIn</span>
               in
             </a>
@@ -62,7 +74,7 @@ const Footer = () => {
             <a href="https://www.X.com/" className="w-8 h-8 rounded-full border border-gray-600 flex items-center justify-center hover:border-white transition-colors">
               <span className="sr-only">Twitter</span>
               X
-            </a>
+            </a> */}
           </div>
         </div>
 
@@ -70,8 +82,12 @@ const Footer = () => {
         <div className="border-t border-gray-800 mt-6 pt-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
           <p>©2024 AKIP Inc. All rights reserved</p>
           <div className="flex gap-4 mt-4 md:mt-0">
-            <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
-            <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
+            <a href="#" className="hover:text-white transition-colors">
+              Terms of Service
+            </a>
+            <a href="#" className="hover:text-white transition-colors">
+              Privacy Policy
+            </a>
           </div>
         </div>
       </div>

@@ -1,10 +1,17 @@
+import logo1 from "../assets/Icons/Images/Untitled-1.png";
+import logo2 from "../assets/Icons/Images/Untitled-2.png";
+import logo3 from "../assets/Icons/Images/Untitled-3.png";
+import logo4 from "../assets/Icons/Images/Untitled-4.png";
+import logo5 from "../assets/Icons/Images/Untitled-5.png";
+import logo6 from "../assets/Icons/Images/Untitled-6.png";
+
 const Careers = () => {
   return (
     <div className="bg-white">
       <div className="relative md:h-[130vh] sm:h-[190vh] xs:h-[200vh] h-[215vh]">
         <div className="absolute h-screen w-full bg-green-400">
           <img
-            src="https://plus.unsplash.com/premium_photo-1661274151793-173c09ced789?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YWdyZWV8ZW58MHx8MHx8fDA%3D"
+            src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="Career image"
             className="w-full h-full object-cover brightness-50"
           />
@@ -12,21 +19,22 @@ const Careers = () => {
         <div className="absolute h-full w-full px-9 py-32">
           <div className="flex lg:flex-row flex-col px-2 my-14 mb-24 items-center text-white">
             <div className="lg:w-1/2 text-5xl">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Join Us in Shaping a Brighter, Sustainable Future
             </div>
-            <div className="lg:w-1/2 text-sm lg:m-0 mt-5">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
-              dolorem, deserunt vel libero ab quibusdam nesciunt asperiores
-              possimus nisi officiis nemo cum eaque quod vero natus et eius at
-              blanditiis? Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Iusto asperiores consequatur quam iure dolores expedita eius
-              ipsum exercitationem modi adipisci accusantium, saepe ea
-              voluptates! Eum? Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Expedita alias magnam odit.
+            <div className="lg:w-1/2 text-sm lg:m-0 mt-8">
+              At AKIP, we believe in empowering individuals to make a
+              difference. As a leading solar EPC manufacturer in India, we are
+              on a mission to revolutionize the energy landscape with innovative
+              and sustainable solutions. Whether you are an experienced
+              professional or just starting your career, we offer opportunities
+              to grow, lead, and contribute to a greener planet. Explore
+              exciting roles in engineering, procurement, project management,
+              and more. Join us to turn your passion for renewable energy into
+              impactful work. Together, let’s power the future.
             </div>
           </div>
 
-          <div className="w-full md:h-[90vh] bg-slate-400 rounded-3xl px-6 py-8 flex flex-col items-center">
+          <div className="w-full md:h-[75%] bg-slate-400 rounded-3xl px-6 py-8 flex flex-col items-center">
             <h1 className="mb-4 text-3xl lg:text-[2em]">
               <span className="text-gray-500">
                 Why would <br /> you{" "}
@@ -36,7 +44,12 @@ const Careers = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full h-full">
               <div className="bg-white rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300 p-7 m-1 h-[92.5%]">
                 <div className="mb-4 text-green-500">
-                  <svg
+                  <img
+                    src={logo1}
+                    alt="icon"
+                    className="w-[25%] h-auto object-cover brightness-50 mb-[2%]"
+                  />
+                  {/* <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="52"
                     height="52"
@@ -51,7 +64,7 @@ const Careers = () => {
                     <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
                     <line x1="12" x2="12" y1="8" y2="12" />
                     <line x1="12" x2="12.01" y1="16" y2="16" />
-                  </svg>
+                  </svg> */}
                 </div>
                 <h3 className="text-2xl font-semibold mb-2">
                   Excel in a Fast-Growing Environment
@@ -65,22 +78,11 @@ const Careers = () => {
 
               <div className="bg-white rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300 p-7 m-1 h-[92.5%]">
                 <div className="mb-4 text-green-500">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="52"
-                    height="52"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="1.25"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="lucide lucide-badge-alert"
-                  >
-                    <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
-                    <line x1="12" x2="12" y1="8" y2="12" />
-                    <line x1="12" x2="12.01" y1="16" y2="16" />
-                  </svg>
+                  <img
+                    src={logo2}
+                    alt="icon"
+                    className="w-[25%] h-auto object-cover brightness-50 mb-[2%]"
+                  />
                 </div>
                 <h3 className="text-2xl font-semibold mb-2">
                   Collaborate with Exceptional Minds
@@ -94,22 +96,11 @@ const Careers = () => {
 
               <div className="bg-white rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300 p-7 m-1 h-[92.5%]">
                 <div className="mb-4 text-green-500">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="52"
-                    height="52"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="1.25"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="lucide lucide-badge-alert"
-                  >
-                    <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
-                    <line x1="12" x2="12" y1="8" y2="12" />
-                    <line x1="12" x2="12.01" y1="16" y2="16" />
-                  </svg>
+                  <img
+                    src={logo3}
+                    alt="icon"
+                    className="w-[25%] h-auto object-cover brightness-50 mb-[2%]"
+                  />
                 </div>
                 <h3 className="text-2xl font-semibold mb-2">
                   Lead with Confidence, Impact with Purpose
@@ -123,22 +114,11 @@ const Careers = () => {
 
               <div className="bg-white rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300 p-7 m-1 h-[92.5%]">
                 <div className="mb-4 text-green-500">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="52"
-                    height="52"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="1.25"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="lucide lucide-badge-alert"
-                  >
-                    <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
-                    <line x1="12" x2="12" y1="8" y2="12" />
-                    <line x1="12" x2="12.01" y1="16" y2="16" />
-                  </svg>
+                  <img
+                    src={logo4}
+                    alt="icon"
+                    className="w-[25%] h-auto object-cover brightness-50 mb-[2%]"
+                  />
                 </div>
                 <h3 className="text-2xl font-semibold mb-2">
                   Pursue a Journey of Continuous Growth
@@ -152,22 +132,11 @@ const Careers = () => {
 
               <div className="bg-white rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300 p-7 m-1 h-[92.5%]">
                 <div className="mb-4 text-green-500">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="52"
-                    height="52"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="1.25"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="lucide lucide-badge-alert"
-                  >
-                    <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
-                    <line x1="12" x2="12" y1="8" y2="12" />
-                    <line x1="12" x2="12.01" y1="16" y2="16" />
-                  </svg>
+                  <img
+                    src={logo5}
+                    alt="icon"
+                    className="w-[25%] h-auto object-cover brightness-50 mb-[2%]"
+                  />
                 </div>
                 <h3 className="text-2xl font-semibold mb-2">
                   Innovate with the Latest Technologies
@@ -181,22 +150,11 @@ const Careers = () => {
 
               <div className="bg-white rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300 p-7 m-1 h-[92.5%]">
                 <div className="mb-4 text-green-500">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="52"
-                    height="52"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="1.25"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="lucide lucide-badge-alert"
-                  >
-                    <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
-                    <line x1="12" x2="12" y1="8" y2="12" />
-                    <line x1="12" x2="12.01" y1="16" y2="16" />
-                  </svg>
+                  <img
+                    src={logo6}
+                    alt="icon"
+                    className="w-[25%] h-auto object-cover brightness-50 mb-[2%]"
+                  />
                 </div>
                 <h3 className="text-2xl font-semibold mb-2">
                   Expand Your Horizons Across Domains

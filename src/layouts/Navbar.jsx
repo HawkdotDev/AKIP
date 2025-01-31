@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Logo from "../assets/images/Logo.png";
+import Logo from "../assets/images/Logo2.png";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,7 +13,7 @@ const Navbar = () => {
       {/* Main Navbar */}
       <nav className="w-full max-w-[1920px] mx-auto flex justify-between items-center px-7 pt-2 fixed z-[99] bg-black/25 xl:backdrop-blur-sm  backdrop-blur-md">
         <a href="/">
-          <img src={Logo} alt="AKIP logo" className="w-[72px] h-[72px]" />
+          <img src={Logo} alt="AKIP logo" className="w-[72px] h-[72px] mb-2" />
         </a>
 
         <button
@@ -136,7 +136,7 @@ const Navbar = () => {
       {/* Mobile Sliding Navbar */}
       <aside
         className={`xl:hidden fixed top-[78.65px] left-0 w-full bg-black/25 backdrop-blur-md text-white z-[98] transform transition-transform duration-500 ease-in-out ${
-          isMenuOpen ? "translate-y-0" : "-translate-y-[45vh]"
+          isMenuOpen ? "translate-y-0" : "-translate-y-[65vh]"
         }`}
       >
         <div className="flex flex-col items-center">

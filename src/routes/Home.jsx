@@ -1,6 +1,6 @@
 import video1 from "../assets/videos/solar.webm";
 import AnimatedCounter from "../components/AnimationCounter";
-import SolarCalculator from "../components/SolarCalculator";
+// import SolarCalculator from "../components/SolarCalculator";
 import maintainence from "../assets/images/Maintenance.jpg";
 import QualityFeaturesSection from "../components/Qfs";
 import ImageCarousel from "../components/ImageCaroursel";
@@ -189,7 +189,8 @@ const Home = () => {
           </h1>
         </div>
       </div>
-      <div className="">
+      <ShowcaseScroll />
+      {/* <div className="">
         <div className="xl:flex-row flex-col flex h-full justify-between xl:px-16 py-8 px-8 gap-5 xl:gap-0 xl:items-center">
           <div className="xl:w-[69%] xl:h-full h-[48%]">
             <SolarCalculator />
@@ -214,7 +215,7 @@ const Home = () => {
             </button>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="md:h-[600px] bg-white md:flex items-center justify-center md:px-9 lg:px-16 px-8 py-10">
         <ServicesGrid />
@@ -228,11 +229,10 @@ const Home = () => {
       </div>
 
       <QualityFeaturesSection />
-      <ShowcaseScroll />
       <div className="lg:p-16 py-16 md:px-10 px-6 bg-[#FFFFFF] flex flex-col items-center justify-center">
         <h1 className="text-gray-500 text-4xl text-center mb-8">
-          <span className="text-black">Lorem ipsum dolor,</span>
-          sit amet <br /> consectetur adipisicing.
+          <span className="text-black">Explore Our Success Stories: </span>
+          See how our innovative solar solutions are<br /> transforming businesses and communities.
         </h1>
         <ImageCarousel />
       </div>

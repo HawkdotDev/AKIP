@@ -1,9 +1,29 @@
+import csp from "../assets/Icons/Services/Untitled-1.png"
+import oap from "../assets/Icons/Services/Untitled-2.png"
+import opex from "../assets/Icons/Services/Untitled-3.png"
+import bess from "../assets/Icons/Services/Untitled-4.png"
+import iot from "../assets/Icons/Services/Untitled-5.png"
+
 // eslint-disable-next-line react/prop-types
 const ServiceCard = ({ title, description, icon, className = "" }) => (
-  <div className={`bg-gray-200 p-9 sm:mb-0 mb-4 rounded-3xl aspect-1 ${className}`}>
-    <div className="mb-4 ">{icon}</div>
-    <h3 className="text-[6vw] sm:text-5xl md:text-[28px] lg:text-[26px] xl:text-3xl 2xl:text-[40px] font-semibold mb-3 mt-10 lg:mt-6">{title}</h3>
-    <p className="text-[4.5vw] sm:text-[27px] text-gray-600 mb-4 xs:mt-8 xl:mt-10 md:text-[18px] lg:mt-5 xl:text-2xl 2xl:text-[28px] 2xl:leading-[40px]">{description}</p>
+  <div
+    className={`relative bg-gray-200 p-9 sm:mb-0 mb-4 rounded-3xl aspect-1 ${className}`}
+  >
+    {/* <div className="w-1/3 h-auto mb-4">{icon}</div> */}
+    <img
+      src={icon}
+      alt="icon"
+      className="w-[28%] h-auto object-cover brightness-50 mb-[2%]"
+    />
+    <h3 className="text-[6vw] sm:text-5xl md:text-[28px] lg:text-[26px] xl:text-3xl 2xl:text-[40px] font-semibold mb-3 mt-10 lg:mt-6">
+      {title}
+    </h3>
+    <p className="text-[4.5vw] sm:text-[27px] text-gray-600 mb-4 xs:mt-8 xl:mt-10 md:text-[18px] lg:mt-5 xl:text-2xl 2xl:text-[28px] 2xl:leading-[40px]">
+      {description}
+    </p>
+    <button className="bg-green-400 text-white text- py-3 rounded-full mt-4 px-10 w-[39] text-justify ">
+      Learn more
+    </button>
   </div>
 );
 
@@ -22,10 +42,10 @@ const Services = () => {
 
         <div className="relative h-full flex sm:flex-row flex-col justify-between xs:p-6 px-3 py-3">
           <div className="sm:h-full h-[55%] w-full lg:w-[69%] flex flex-col justify-around text-white md:p-7 p-1">
-            <h3 className="xl:text-7xl xl:leading-[80px] md:text-7xl sm:text-6xl text-5xl 2xl:w-2/3">
+            <h3 className="xl:text-7xl xl:leading-[80px] md:text-7xl sm:text-6xl text-5xl 2xl:w-2/3 sm:m-0 mt-6">
               Powering a Sustainable Future with End-to-End Solar EPC Solutions
             </h3>
-            <p className="lg:text-xl xl:text-2xl 2xl:text-[28.5px] sm:text-lg xl:w-4/5 sm:w-4/5 w-full">
+            <p className="lg:text-xl xl:text-2xl 2xl:text-[28.5px] sm:text-lg xl:w-4/5 sm:w-4/5 w-full mt-10">
               As a leading solar EPC manufacturer in India, we specialize in
               delivering turnkey solutions that harness the power of the sun.
               From engineering design and procurement to seamless project
@@ -33,7 +53,7 @@ const Services = () => {
               reliability, and sustainability in every project. Partner with us
               to illuminate your path toward clean energy.
             </p>
-            <span>
+            <span className="sm:m-0 mt-16">
               <a
                 href="#"
                 className="bg-green-500 py-3 px-4 text-xl text-black rounded-3xl"
@@ -101,99 +121,29 @@ const Services = () => {
             <ServiceCard
               title="Captive Solar Project"
               description="Leverage dedicated solar energy solutions tailored for businesses, ensuring uninterrupted power supply, cost efficiency, and sustainability."
-              icon={
-                <svg
-                  className="w-8 h-8 text-green-500"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
-                  />
-                </svg>
-              }
+              icon={csp}
             />
             <ServiceCard
               title="Open Access Project"
               description="Explore the benefits of solar power through open-access platforms, enabling industries to source clean energy directly from solar producers."
-              icon={
-                <svg
-                  className="w-8 h-8 text-green-500"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M8 11V7a4 4 0 118 0m-4 8v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2z"
-                  />
-                </svg>
-              }
+              icon={oap}
             />
             <ServiceCard
               title="OPEX Solutions"
               description="Adopt operational expenditure models for solar installations, minimizing upfront costs and maximizing returns on renewable energy investments."
-              icon={
-                <svg
-                  className="w-8 h-8 text-green-500"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M13 10V3L4 14h7v7l9-11h-7z"
-                  />
-                </svg>
-              }
+              icon={opex}
             />
           </div>
           <div className="flex gap-3 w-[66%]">
             <ServiceCard
               title="Captive Solar Project"
               description="Leverage dedicated solar energy solutions tailored for businesses, ensuring uninterrupted power supply, cost efficiency, and sustainability."
-              icon={
-                <svg
-                  className="w-8 h-8 text-green-500"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
-                  />
-                </svg>
-              }
+              icon={bess}
             />
             <ServiceCard
               title="Open Access Project"
               description="Explore the benefits of solar power through open-access platforms, enabling industries to source clean energy directly from solar producers."
-              icon={
-                <svg
-                  className="w-8 h-8 text-green-500"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M8 11V7a4 4 0 118 0m-4 8v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2z"
-                  />
-                </svg>
-              }
+              icon={iot}
             />
           </div>
         </div>
@@ -203,101 +153,31 @@ const Services = () => {
             <ServiceCard
               title="Captive Solar Project"
               description="Leverage dedicated solar energy solutions tailored for businesses, ensuring uninterrupted power supply, cost efficiency, and sustainability."
-              icon={
-                <svg
-                  className="w-8 h-8 text-green-500"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
-                  />
-                </svg>
-              }
+              icon={csp}
             />
             <ServiceCard
               title="Open Access Project"
               description="Explore the benefits of solar power through open-access platforms, enabling industries to source clean energy directly from solar producers."
-              icon={
-                <svg
-                  className="w-8 h-8 text-green-500"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M8 11V7a4 4 0 118 0m-4 8v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2z"
-                  />
-                </svg>
-              }
+              icon={oap}
             />
           </div>
           <div className="flex gap-3">
             <ServiceCard
               title="Captive Solar Project"
               description="Leverage dedicated solar energy solutions tailored for businesses, ensuring uninterrupted power supply, cost efficiency, and sustainability."
-              icon={
-                <svg
-                  className="w-8 h-8 text-green-500"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
-                  />
-                </svg>
-              }
+              icon={opex}
             />
             <ServiceCard
               title="Open Access Project"
               description="Explore the benefits of solar power through open-access platforms, enabling industries to source clean energy directly from solar producers."
-              icon={
-                <svg
-                  className="w-8 h-8 text-green-500"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M8 11V7a4 4 0 118 0m-4 8v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2z"
-                  />
-                </svg>
-              }
+              icon={bess}
             />
           </div>
           <div className="flex gap-3 w-[50%]">
             <ServiceCard
               title="Captive Solar Project"
               description="Leverage dedicated solar energy solutions tailored for businesses, ensuring uninterrupted power supply, cost efficiency, and sustainability."
-              icon={
-                <svg
-                  className="w-8 h-8 text-green-500"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
-                  />
-                </svg>
-              }
+              icon={iot}
             />
           </div>
         </div>
@@ -306,97 +186,27 @@ const Services = () => {
           <ServiceCard
             title="Captive Solar Project"
             description="Leverage dedicated solar energy solutions tailored for businesses, ensuring uninterrupted power supply, cost efficiency, and sustainability."
-            icon={
-              <svg
-                className="w-8 h-8 text-green-500"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
-                />
-              </svg>
-            }
+            icon={csp}
           />
           <ServiceCard
             title="Open Access Project"
             description="Explore the benefits of solar power through open-access platforms, enabling industries to source clean energy directly from solar producers."
-            icon={
-              <svg
-                className="w-8 h-8 text-green-500"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M8 11V7a4 4 0 118 0m-4 8v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2z"
-                />
-              </svg>
-            }
+            icon={oap}
           />
           <ServiceCard
             title="Captive Solar Project"
             description="Leverage dedicated solar energy solutions tailored for businesses, ensuring uninterrupted power supply, cost efficiency, and sustainability."
-            icon={
-              <svg
-                className="w-8 h-8 text-green-500"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
-                />
-              </svg>
-            }
+            icon={opex}
           />
           <ServiceCard
             title="Open Access Project"
             description="Explore the benefits of solar power through open-access platforms, enabling industries to source clean energy directly from solar producers."
-            icon={
-              <svg
-                className="w-8 h-8 text-green-500"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M8 11V7a4 4 0 118 0m-4 8v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2z"
-                />
-              </svg>
-            }
+            icon={bess}
           />
           <ServiceCard
             title="Captive Solar Project"
             description="Leverage dedicated solar energy solutions tailored for businesses, ensuring uninterrupted power supply, cost efficiency, and sustainability."
-            icon={
-              <svg
-                className="w-8 h-8 text-green-500"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
-                />
-              </svg>
-            }
+            icon={iot}
           />
         </div>
 
@@ -404,97 +214,27 @@ const Services = () => {
           <ServiceCard
             title="Captive Solar Project"
             description="Leverage dedicated solar energy solutions tailored for businesses, ensuring uninterrupted power supply, cost efficiency, and sustainability."
-            icon={
-              <svg
-                className="w-8 h-8 text-green-500"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
-                />
-              </svg>
-            }
+            icon={csp}
           />
           <ServiceCard
             title="Open Access Project"
             description="Explore the benefits of solar power through open-access platforms, enabling industries to source clean energy directly from solar producers."
-            icon={
-              <svg
-                className="w-8 h-8 text-green-500"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M8 11V7a4 4 0 118 0m-4 8v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2z"
-                />
-              </svg>
-            }
+            icon={oap}
           />
           <ServiceCard
             title="Captive Solar Project"
             description="Leverage dedicated solar energy solutions tailored for businesses, ensuring uninterrupted power supply, cost efficiency, and sustainability."
-            icon={
-              <svg
-                className="w-8 h-8 text-green-500"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
-                />
-              </svg>
-            }
+            icon={opex}
           />
           <ServiceCard
             title="Open Access Project"
             description="Explore the benefits of solar power through open-access platforms, enabling industries to source clean energy directly from solar producers."
-            icon={
-              <svg
-                className="w-8 h-8 text-green-500"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M8 11V7a4 4 0 118 0m-4 8v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2z"
-                />
-              </svg>
-            }
+            icon={bess}
           />
           <ServiceCard
             title="Captive Solar Project"
             description="Leverage dedicated solar energy solutions tailored for businesses, ensuring uninterrupted power supply, cost efficiency, and sustainability."
-            icon={
-              <svg
-                className="w-8 h-8 text-green-500"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
-                />
-              </svg>
-            }
+            icon={iot}
           />
         </div>
       </div>
