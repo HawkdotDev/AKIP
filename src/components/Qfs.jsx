@@ -1,65 +1,60 @@
+import expertise from "../assets/Icons/HomePageUSPs/Expertise.png";
+import market from "../assets/Icons/HomePageUSPs/highgrowthmarket.png";
+import portfolio from "../assets/Icons/HomePageUSPs/portfolio.png";
+import financial from "../assets/Icons/HomePageUSPs/finance.png";
+import sustainable from "../assets/Icons/HomePageUSPs/sustainanbleimpact.png";
+import Fostering from "../assets/Icons/HomePageUSPs/partnerships.png";
+
 const QualityFeaturesSection = () => {
   const features = [
     {
       icon: (
-        <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="4" y="4" width="16" height="4" className="fill-green-500" />
-          <rect x="4" y="10" width="16" height="4" className="fill-green-500" />
-          <rect x="4" y="16" width="16" height="4" className="fill-green-500" />
-        </svg>
+        expertise
       ),
-      title: "Layered security",
-      description: "We prioritize your safety with a multi-layered security approach, ensuring robust system protection, secure installations, and continuous monitoring to keep your solar investment secure."
+      title: "Established Expertise",
+      description:
+        "With more than a decade of experience, PAJVA boasts a successful portfolio of projects. Our dedicated team navigates the market with unrivaled expertise, minimizing risks and maximizing returns.",
     },
     {
       icon: (
-        <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="12" cy="12" r="10" strokeWidth="2" className="stroke-green-500" />
-          <circle cx="12" cy="12" r="4" className="fill-green-500" />
-        </svg>
+        market
       ),
-      title: "Quality control",
-      description: "Our solar solutions undergo stringent quality control checks at every stage—from material selection to installation—guaranteeing top-notch performance and durability"
+      title: "High-Growth Market",
+      description:
+        "India's renewable energy market is seeing unprecedented growth, presenting immense growth opportunities for investors. PAJVA leads a proven track record and ambitious expansion plans.",
     },
     {
       icon: (
-        <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="12" cy="12" r="10" strokeWidth="2" className="stroke-green-500" />
-          <circle cx="12" cy="12" r="4" className="fill-green-500" />
-        </svg>
+        portfolio
       ),
-      title: "Quality control",
-      description: "Our solar solutions undergo stringent quality control checks at every stage—from material selection to installation—guaranteeing top-notch performance and durability"
+      title: "Diversified Portfolio",
+      description:
+        "PAJVA offers a robust mix of solar, wind, and battery storage projects, mitigating risks and optimizing returns across diverse renewable energy streams. Seamlessly driving sustainable energy solutions.",
     },
     {
       icon: (
-        <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M20 2H4C2.9 2 2 2.9 2 4V16C2 17.1 2.9 18 4 18H8L12 22L16 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2Z" className="fill-green-500" />
-        </svg>
+        financial
       ),
-      title: "Reliable customer service",
-      description: "Experience unparalleled customer support with our dedicated team, available 24/7 to address your concerns, provide guidance, and ensure seamless service at all times."
+      title: "Financial Stability",
+      description:
+        "PAJVA enjoys financial stability and access to resources, ensuring long-term success and investor confidence.",
     },
     {
       icon: (
-        <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="12" cy="12" r="10" strokeWidth="2" className="stroke-green-500" />
-          <path d="M12 16V17M12 7V13" stroke="currentColor" strokeWidth="2" strokeLinecap="round" className="stroke-green-500" />
-        </svg>
+        sustainable
       ),
-      title: "Maintenance manual book",
-      description: "Simplify system upkeep with our comprehensive maintenance manual, featuring clear instructions, troubleshooting tips, and best practices to maximize your solar system's efficiency."
+      title: "Sustainable Impact",
+      description:
+        "You contribute to a greener future while earning attractive returns. Your investment fuels India's clean energy transition and creates a lasting positive impact.",
     },
     {
       icon: (
-        <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="12" cy="12" r="10" strokeWidth="2" className="stroke-green-500" />
-          <path d="M12 16V17M12 7V13" stroke="currentColor" strokeWidth="2" strokeLinecap="round" className="stroke-green-500" />
-        </svg>
+        Fostering
       ),
-      title: "Maintenance manual book",
-      description: "Simplify system upkeep with our comprehensive maintenance manual, featuring clear instructions, troubleshooting tips, and best practices to maximize your solar system's efficiency."
-    }
+      title: "Fostering Partnerships",
+      description:
+        "By prioritizing customer success, we create a ripple effect of positive impact. Your growth fuels a greener future, demonstrating collaborative action.",
+    },
   ];
 
   return (
@@ -68,15 +63,21 @@ const QualityFeaturesSection = () => {
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold">
             We offer quality,
-            <span className="text-gray-400"> with the best materials and service</span>
+            <span className="text-gray-400">
+              {" "}
+              with the best materials and service
+            </span>
           </h2>
         </div>
-        
+
         <div className="bg-white rounded-3xl p-8 shadow-lg w-full h-full">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
             {features.map((feature, index) => (
               <div key={index} className="flex flex-col items-start space-y-4">
-                {feature.icon}
+                <img
+                  src={feature.icon}
+                  className="w-[17.5%] h-full object-contain p-2"
+                />
                 <h3 className="text-xl font-bold">{feature.title}</h3>
                 <p className="text-gray-600">{feature.description}</p>
               </div>

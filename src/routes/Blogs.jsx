@@ -324,7 +324,6 @@ const Blogs = () => {
             <div className="sm:h-full h-1/2 sm:w-[49.5%] w-full bg-slate-500 rounded-3xl"></div>
           </div>
         </div>
-
       </div>
       <div className="relative w-full min-h-[300px] lg:min-h-[500px]">
         <div className="absolute inset-0 bg-gray-900/50">
@@ -339,7 +338,7 @@ const Blogs = () => {
         <div className="relative h-full flex flex-col items-center justify-center text-center px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6">
             <span className="block">Want to join</span>
-            <span className="block">our AKIP Team?</span>
+            <span className="block">our PAJVA Team?</span>
           </h2>
 
           <p className="text-sm sm:text-base lg:text-lg text-gray-200 max-w-md sm:max-w-xl lg:max-w-2xl mb-6 sm:mb-8 lg:mb-10">

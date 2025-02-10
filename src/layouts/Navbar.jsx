@@ -3,17 +3,25 @@ import Logo from "../assets/images/Logo2.png";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isServicesOpen, setIsServicesOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+    if (!isMenuOpen) {
+      setIsServicesOpen(false); // Close services dropdown when closing menu
+    }
+  };
+
+  const toggleServices = () => {
+    setIsServicesOpen(!isServicesOpen);
   };
 
   return (
     <>
       {/* Main Navbar */}
-      <nav className="w-full max-w-[1920px] mx-auto flex justify-between items-center px-7 pt-2 fixed z-[99] bg-black/25 xl:backdrop-blur-sm  backdrop-blur-md">
+      <nav className="w-full max-w-[1920px] mx-auto flex justify-between items-center px-7 pt-2 fixed z-[99] bg-black/25 xl:backdrop-blur-sm backdrop-blur-md">
         <a href="/">
-          <img src={Logo} alt="AKIP logo" className="w-[72px] h-[72px] mb-2" />
+          <img src={Logo} alt="PAJVA logo" className="w-[72px] h-[72px] mb-2" />
         </a>
 
         <button
@@ -136,29 +144,104 @@ const Navbar = () => {
       {/* Mobile Sliding Navbar */}
       <aside
         className={`xl:hidden fixed top-[78.65px] left-0 w-full bg-black/25 backdrop-blur-md text-white z-[98] transform transition-transform duration-500 ease-in-out ${
-          isMenuOpen ? "translate-y-0" : "-translate-y-[65vh]"
+          isMenuOpen ? "translate-y-0" : "-translate-y-[95vh]"
         }`}
       >
         <div className="flex flex-col items-center">
-          <a href="/" className="hover:text-green-500 text-lg h-full w-full hover:bg-black/30 p-4 text-center">
+          <a
+            href="/"
+            className="hover:text-green-500 text-lg h-full w-full hover:bg-black/30 p-4 text-center"
+          >
             Home
           </a>
-          <a href="/Blogs" className="hover:text-green-500 text-lg h-full w-full hover:bg-black/30 p-4 text-center">
+          <a
+            href="/Blogs"
+            className="hover:text-green-500 text-lg h-full w-full hover:bg-black/30 p-4 text-center"
+          >
             Blogs
           </a>
-          <a href="/Services" className="hover:text-green-500 text-lg h-full w-full hover:bg-black/30 p-4 text-center">
-            Services
-          </a>
-          <a href="/Media" className="hover:text-green-500 text-lg h-full w-full hover:bg-black/30 p-4 text-center">
+          {/* Services Section with Dropdown */}
+          <div className="w-full">
+            <button
+              onClick={toggleServices}
+              className="hover:text-green-500 text-lg h-full w-full hover:bg-black/30 p-4 text-center flex items-center justify-center"
+            >
+              Services
+              <svg
+                className={`ml-2 h-4 w-4 transform transition-transform ${
+                  isServicesOpen ? "rotate-180" : ""
+                }`}
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
+            <div
+              className={`bg-black/40 transition-all duration-300 overflow-hidden ${
+                isServicesOpen ? "max-h-[500px]" : "max-h-0"
+              }`}
+            >
+              <a
+                href="/Services/Captive-Solar-Project"
+                className="block py-3 px-4 hover:bg-black/30 text-center"
+              >
+                Captive Solar Project
+              </a>
+              <a
+                href="/Services/Open-Access-Project"
+                className="block py-3 px-4 hover:bg-black/30 text-center"
+              >
+                Open Access Project
+              </a>
+              <a
+                href="/Services/Opex-Solution"
+                className="block py-3 px-4 hover:bg-black/30 text-center"
+              >
+                Opex Solution
+              </a>
+              <a
+                href="/Services/BESS-System"
+                className="block py-3 px-4 hover:bg-black/30 text-center"
+              >
+                BESS System
+              </a>
+              <a
+                href="/Services/IOT"
+                className="block py-3 px-4 hover:bg-black/30 text-center"
+              >
+                IOT
+              </a>
+            </div>
+          </div>
+          <a
+            href="/Media"
+            className="hover:text-green-500 text-lg h-full w-full hover:bg-black/30 p-4 text-center"
+          >
             Media
           </a>
-          <a href="/About" className="hover:text-green-500 text-lg h-full w-full hover:bg-black/30 p-4 text-center">
+          <a
+            href="/About"
+            className="hover:text-green-500 text-lg h-full w-full hover:bg-black/30 p-4 text-center"
+          >
             About
           </a>
-          <a href="/Careers" className="hover:text-green-500 text-lg h-full w-full hover:bg-black/30 p-4 text-center">
+          <a
+            href="/Careers"
+            className="hover:text-green-500 text-lg h-full w-full hover:bg-black/30 p-4 text-center"
+          >
             Careers
           </a>
-          <a href="/ContactUs" className="hover:text-green-500 text-lg h-full w-full hover:bg-black/30 p-4 text-center">
+          <a
+            href="/ContactUs"
+            className="hover:text-green-500 text-lg h-full w-full hover:bg-black/30 p-4 text-center"
+          >
             Contact Us
           </a>
         </div>

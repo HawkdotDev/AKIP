@@ -26,13 +26,17 @@ const Footer = () => {
 
           {/* Right side - Lorem ipsum and button */}
           <div className="flex flex-col items-start md:items-end">
-            <p className="text-gray-400 mb-4 md:text-right max-w-md">
-            Empowering a sustainable future with clean, renewable energy. Join us in making a positive impact on the planet through innovative solar solutions.
+            <p className="text-gray-400 mb-4 md:text-right max-w-md invisible">
+              Empowering a sustainable future with clean, renewable energy. Join
+              us in making a positive impact on the planet through innovative
+              solar solutions.
             </p>
-            <button className="bg-white text-black px-6 py-2 rounded-full hover:bg-gray-200 transition-colors flex items-center gap-2">
-              Get in touch
-              <span className="inline-block ml-1">→</span>
-            </button>
+            <a href="mailto:aaryan.agrahari@pajva.in">
+              <button className="bg-white text-black px-6 py-2 rounded-full hover:bg-gray-200 transition-colors flex items-center gap-2">
+                Get in touch
+                <span className="inline-block ml-1">→</span>
+              </button>
+            </a>
           </div>
         </div>
 
@@ -55,10 +59,13 @@ const Footer = () => {
 
           {/* Social media icons */}
           <div className="flex gap-4">
-            <button className="bg-white text-black px-6 py-2 rounded-full hover:bg-gray-200 transition-colors flex items-center gap-2">
+            <a
+              href="https://www.linkedin.com/company/pajva-energy/"
+              className="bg-[#0073B1] text-white px-6 py-2 rounded-full hover:bg-[#068cd5] transition-colors flex items-center gap-2"
+            >
               Linkedin
               <span className="inline-block ml-1">→</span>
-            </button>
+            </a>
             {/* <a href="https://www.linkedin.com/" className="w-8 h-8 rounded-full border border-gray-600 flex items-center justify-center hover:border-white transition-colors">
               <span className="sr-only">LinkedIn</span>
               in
@@ -80,7 +87,7 @@ const Footer = () => {
 
         {/* Copyright and legal */}
         <div className="border-t border-gray-800 mt-6 pt-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
-          <p>©2024 AKIP Inc. All rights reserved</p>
+          <p>©2025 PAJVA Inc. All rights reserved</p>
           <div className="flex gap-4 mt-4 md:mt-0">
             <a href="#" className="hover:text-white transition-colors">
               Terms of Service

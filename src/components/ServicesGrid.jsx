@@ -31,7 +31,7 @@ const ServicesGrid = () => {
             className="bg-gray-100 p-4 md:p-6 rounded-2xl space-y-3 md:space-y-4 aspect-square flex flex-col justify-between"
           >
             <div className="flex-grow">
-              <span className="text-2xl md:text-4xl text-gray-400 font-light">
+              <span className="text-2xl md:text-4xl text-green-400 font-light">
                 {service.id}
               </span>
               <div className="space-y-3 md:space-y-4">

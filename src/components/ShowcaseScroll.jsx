@@ -39,28 +39,30 @@ const ShowcaseScroll = () => {
   }, []);
 
   return (
-    <section className="w-full flex flex-col items-center">
-      <div
-        ref={slideshowRef}
-        className="w-full mt-10 overflow-hidden whitespace-nowrap relative"
-      >
-        <div className="flex space-x-10">
-          {/* Duplicated images for seamless scrolling */}
-          {[...images, ...images].map((image, index) => (
-            <div
-              key={index}
-              className="w-72 h-44 flex-shrink-0"
-            >
-              <img
-                src={image.src}
-                alt={image.alt}
-                className="w-full h-full object-contain p-2"
-              />
-            </div>
-          ))}
-        </div>
+    <>
+      <section className="w-full flex flex-col items-center">
+      <div className="px-7 pt-9 pb-3 text-3xl">
+        Technological Partners
       </div>
-    </section>
+        <div
+          ref={slideshowRef}
+          className="w-full my-10 overflow-hidden whitespace-nowrap relative"
+        >
+          <div className="flex space-x-10">
+            {/* Duplicated images for seamless scrolling */}
+            {[...images, ...images].map((image, index) => (
+              <div key={index} className="w-72 h-44 flex-shrink-0">
+                <img
+                  src={image.src}
+                  alt={image.alt}
+                  className="w-full h-full object-contain p-2"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    </>
   );
 };
 

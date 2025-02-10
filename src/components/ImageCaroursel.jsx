@@ -8,21 +8,21 @@ const ImageCarousel = () => {
   const slides = [
     {
       title: "Medtronic",
-      text: "We have used services from AKIP for most of our stations. This is our strategic step to continue to increase the number of solar panel usage for our stations. We are very satisfied with services from AKIP.",
+      text: "We have used services from PAJVA for most of our stations. This is our strategic step to continue to increase the number of solar panel usage for our stations. We are very satisfied with services from PAJVA.",
       author: "Jennifer Kolobaly - CTO EV Medtronic",
       image: image1,
       label: "Electric car charging station",
     },
     {
       title: "Solar Energy",
-      text: "Partnering with AKIP has empowered us to achieve sustainable energy solutions for residential projects. The solar panel installations are seamless, efficient, and have exceeded our energy output expectations.",
+      text: "Partnering with PAJVA has empowered us to achieve sustainable energy solutions for residential projects. The solar panel installations are seamless, efficient, and have exceeded our energy output expectations.",
       author: "David Brown - Director of Operations, Green Homes",
       image: image1,
       label: "Residential solar panels",
     },
     {
       title: "Wind Power",
-      text: "AKIP's wind energy solutions have transformed our approach to industrial power generation. The implementation was streamlined and has enabled us to significantly reduce our carbon footprint while maintaining consistent energy supply.",
+      text: "PAJVA's wind energy solutions have transformed our approach to industrial power generation. The implementation was streamlined and has enabled us to significantly reduce our carbon footprint while maintaining consistent energy supply.",
       author: "Sarah Edwards - Energy Manager, EcoIndustries",
       image: image1,
       label: "Wind power for industry",
@@ -58,7 +58,6 @@ const ImageCarousel = () => {
   return (
     <div className="w-full">
       <div className="flex flex-col space-y-8">
-        
         {/* Carousel section */}
         <div className="relative bg-[#E6E6E6] rounded-3xl overflow-hidden xl:mx-28">
           <div className="relative">

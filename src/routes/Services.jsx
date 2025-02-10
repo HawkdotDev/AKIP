@@ -7,13 +7,12 @@ import iot from "../assets/Icons/Services/Untitled-5.png"
 // eslint-disable-next-line react/prop-types
 const ServiceCard = ({ title, description, icon, className = "" }) => (
   <div
-    className={`relative bg-gray-200 p-9 sm:mb-0 mb-4 rounded-3xl aspect-1 ${className}`}
+    className={`lg:w-[32%] bg-gray-200 p-9 sm:mb-0 mb-4 rounded-3xl aspect-1 ${className}`}
   >
-    {/* <div className="w-1/3 h-auto mb-4">{icon}</div> */}
     <img
       src={icon}
       alt="icon"
-      className="w-[28%] h-auto object-cover brightness-50 mb-[2%]"
+      className="w-[28%] h-auto object-cover mb-[2%]"
     />
     <h3 className="text-[6vw] sm:text-5xl md:text-[28px] lg:text-[26px] xl:text-3xl 2xl:text-[40px] font-semibold mb-3 mt-10 lg:mt-6">
       {title}
@@ -116,8 +115,8 @@ const Services = () => {
           </p>
         </div>
 
-        <div className="flex-col lg:flex gap-3 items-center hidden">
-          <div className="flex gap-3">
+        <div className="flex-col lg:flex gap-3 items-center hidden w-full">
+          <div className="flex gap-3 justify-center">
             <ServiceCard
               title="Captive Solar Project"
               description="Leverage dedicated solar energy solutions tailored for businesses, ensuring uninterrupted power supply, cost efficiency, and sustainability."
@@ -134,7 +133,7 @@ const Services = () => {
               icon={opex}
             />
           </div>
-          <div className="flex gap-3 w-[66%]">
+          <div className="flex gap-3 w-[100%] justify-center">
             <ServiceCard
               title="Captive Solar Project"
               description="Leverage dedicated solar energy solutions tailored for businesses, ensuring uninterrupted power supply, cost efficiency, and sustainability."

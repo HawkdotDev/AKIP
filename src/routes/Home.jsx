@@ -3,7 +3,7 @@ import AnimatedCounter from "../components/AnimationCounter";
 // import SolarCalculator from "../components/SolarCalculator";
 import maintainence from "../assets/images/Maintenance.jpg";
 import QualityFeaturesSection from "../components/Qfs";
-import ImageCarousel from "../components/ImageCaroursel";
+// import ImageCarousel from "../components/ImageCaroursel";
 import ServicesGrid from "../components/ServicesGrid";
 import BrochureComponent from "../components/BrochureComponent";
 import ShowcaseScroll from "../components/ShowcaseScroll";
@@ -20,7 +20,9 @@ const Home = () => {
         </div>
         <div className="mobile w-full h-full absolute flex flex-col justify-end lg:hidden">
           <div className="w-full h-[30%] mb-6 mt-12 flex flex-col items-center text-white">
-            <p className="text-gray-100">#1 Energy provider in the world</p>
+            <p className="text-gray-100">
+              Leading energy provider in the world
+            </p>
             <h3 className="text-center text-6xl pt-7 font-medium">
               New Energy <br /> for the Future
             </h3>
@@ -99,7 +101,7 @@ const Home = () => {
           <div className="w-1/2 h-full flex flex-col justify-center items-center">
             <div className="w-[80%] h-[60%] flex flex-col justify-end mb-28">
               <p className="text-gray-100 lg:text-[1vw] xxl:text-[28.5px]">
-                #1 Energy provider in the world
+                Leading energy provider in the world
               </p>
               <h3 className="text-6xl lg:text-[5.5vw] xxl:text-[120px] lg:pb-6 lg:pt-8 pt-7 font-medium text-white">
                 New Energy <br /> for the Future
@@ -154,22 +156,22 @@ const Home = () => {
             </div>
             <div className="w-full h-[27%] bg-white mt-14 rounded-tl-3xl flex justify-evenly">
               <AnimatedCounter
-                numsArray={[7]}
-                decoration={"M"}
-                greytext="parts of the world"
-                blacktext="Employees work in all"
-              />
-              <AnimatedCounter
-                numsArray={[250]}
-                decoration={"+"}
-                greytext={"worldwide"}
-                blacktext={"Project completed"}
+                numsArray={[4]}
+                decoration={""}
+                greytext="till date"
+                blacktext="Sites commissioned"
               />
               <AnimatedCounter
                 numsArray={[120]}
-                decoration={"k"}
-                greytext="parts of the world"
-                blacktext="Employees work in all"
+                decoration={"MW"}
+                greytext={"developed"}
+                blacktext={"Worth of assets"}
+              />
+              <AnimatedCounter
+                numsArray={[300]}
+                decoration={"MW+"}
+                greytext="in the Pipeline"
+                blacktext="Worth of Projects"
               />
             </div>
           </div>
@@ -178,12 +180,12 @@ const Home = () => {
       <div className="bg-white px-8 lg:py-28 py-16 ">
         <div className="lg:flex justify-between">
           <h1 className="text-4xl text-gray-400 lg:w-[35%]">
-            <span className="text-black">Profit</span> & Growth
+            <span className="text-black">Focusing</span> on quality,
             <br />
-            Simplified
+            we maintain customer trust.
           </h1>
           <h1 className="lg:w-[55%] text-black text-xl lg:p-0 pt-5">
-            At AKIP, we make solar simple. With expert support and reliable
+            At PAJVA, we make solar simple. With expert support and reliable
             solutions, we help homes and businesses go green, cut costs, and
             embrace energy independence.
           </h1>
@@ -229,13 +231,15 @@ const Home = () => {
       </div>
 
       <QualityFeaturesSection />
-      <div className="lg:p-16 py-16 md:px-10 px-6 bg-[#FFFFFF] flex flex-col items-center justify-center">
+
+      {/* <div className="lg:p-16 py-16 md:px-10 px-6 bg-[#FFFFFF] flex flex-col items-center justify-center">
         <h1 className="text-gray-500 text-4xl text-center mb-8">
           <span className="text-black">Explore Our Success Stories: </span>
           See how our innovative solar solutions are<br /> transforming businesses and communities.
         </h1>
         <ImageCarousel />
-      </div>
+      </div> */}
+
       {/* <div className="px-28 py-8">
         <div className="bg-gray-100 rounded-lg p-8 w-full mx-auto my-4">
           <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
