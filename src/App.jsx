@@ -11,7 +11,7 @@ import Oap from "./routes/Services/OAP";
 import Opex from "./routes/Services/OPEX";
 import Iot from "./routes/Services/IOT";
 import Csp from "./routes/Services/Csp";
-import Bss from "./routes/Services/Bss";
+import BESS from "./routes/Services/BESS";
 import BlogPage from "./routes/BlogPage";
 import Footer from "./layouts/Footer";
 import Navbar from "./layouts/Navbar";
@@ -32,7 +32,7 @@ function App() {
             <Route path="/Services/Captive-Solar-Project" element={<Csp />} />
             <Route path="/Services/Open-Access-Project" element={<Oap />} />
             <Route path="/Services/Opex-Solution" element={<Opex />} />
-            <Route path="/Services/BESS-System" element={<Bss />} />
+            <Route path="/Services/BESS-System" element={<BESS />} />
             <Route path="/Services/IOT" element={<Iot />} />
 
             <Route path="/About" element={<About />} />

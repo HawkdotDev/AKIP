@@ -12,7 +12,6 @@ const Csp = () => {
           className="absolute inset-0 w-full h-full object-cover brightness-25"
         />
         <div className="absolute inset-0 bg-black/50" /> {/* Dark Overlay */}
-
         {/* Content */}
         <div className="relative z-10 text-white text-center px-6 max-w-3xl">
           <h1 className="text-4xl lg:text-5xl font-bold mb-6">
@@ -44,11 +43,12 @@ const Csp = () => {
               Rooftop Project
             </h1>
             <p className="text-md lg:text-lg">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio
-              reiciendis, commodi temporibus voluptatum porro quaerat nemo sint
-              alias officia dolorum.
+              A rooftop solar project consists of solar panels installed on a
+              buildings roof to generate electricity. These panels are
+              integrated into the buildings electrical system or connected to
+              the power grid for efficient energy use.
             </p>
-            <button className="px-4 py-2 w-[136px] flex items-center bg-black border-white border rounded-3xl">
+            <button className="px-4 py-2 w-[45%] flex items-center bg-black border-white border rounded-3xl">
               Learn More
               <img src={arrow} alt="arrow icon" className="ml-2" />
             </button>
@@ -70,11 +70,15 @@ const Csp = () => {
             <h1 className="text-[40px] sm:text-[58px] lg:text-[2.95vw]">
               Ground Mount Project
             </h1>
-            <p className="text-md lg:text-lg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
-              totam quaerat? Officiis minus voluptate consectetur iusto.
+            <p className="text-md lg:text-[16px] mb-2">
+              A ground-mounted solar project is a solar power system where
+              photovoltaic (PV) panels are installed on the ground using a
+              dedicated mounting structure. This setup allows for large-scale
+              installations with optimal sunlight exposure by adjusting the
+              panel tilt, making it ideal for commercial and utility-scale
+              projects in open spaces.
             </p>
-            <button className="px-4 py-2 w-[136px] flex items-center bg-black border-white border rounded-3xl">
+            <button className="px-4 py-2 w-[45%] flex items-center bg-black border-white border rounded-3xl">
               Learn More
               <img src={arrow} alt="arrow icon" className="ml-2" />
             </button>

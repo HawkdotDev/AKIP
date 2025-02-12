@@ -26,10 +26,8 @@ const Footer = () => {
 
           {/* Right side - Lorem ipsum and button */}
           <div className="flex flex-col items-start md:items-end">
-            <p className="text-gray-400 mb-4 md:text-right max-w-md invisible">
-              Empowering a sustainable future with clean, renewable energy. Join
-              us in making a positive impact on the planet through innovative
-              solar solutions.
+            <p className="text-gray-400 mb-4 md:text-right max-w-md">
+              Invest once, benefit for decades. <br /> Let us make solar work for you!
             </p>
             <a href="mailto:aaryan.agrahari@pajva.in">
               <button className="bg-white text-black px-6 py-2 rounded-full hover:bg-gray-200 transition-colors flex items-center gap-2">

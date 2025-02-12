@@ -5,6 +5,7 @@ import goodwe from "../assets/Company/goodwe.png";
 import jio from "../assets/Company/jio.png";
 import tata from "../assets/Company/tata.png";
 import renew from "../assets/Company/renew.png";
+import delta from "../assets/Company/delta.png"
 
 const images = [
   { src: adani, alt: "Adani" },
@@ -12,6 +13,7 @@ const images = [
   { src: jio, alt: "Jio" },
   { src: tata, alt: "Tata" },
   { src: renew, alt: "Renew" },
+  { src: delta, alt: "Delta" },
 ];
 
 const ShowcaseScroll = () => {
@@ -41,7 +43,7 @@ const ShowcaseScroll = () => {
   return (
     <>
       <section className="w-full flex flex-col items-center">
-      <div className="px-7 pt-9 pb-3 text-3xl">
+      <div className="px-7 pt-9 pb-3 text-4xl font-semibold">
         Technological Partners
       </div>
         <div

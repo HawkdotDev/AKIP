@@ -37,7 +37,7 @@ const QualityFeaturesSection = () => {
       ),
       title: "Financial Stability",
       description:
-        "PAJVA enjoys financial stability and access to resources, ensuring long-term success and investor confidence.",
+        "PAJVA enjoys strong financial stability and unrestricted access to essential resources, enabling continuous growth, innovation, and market expansion.",
     },
     {
       icon: (

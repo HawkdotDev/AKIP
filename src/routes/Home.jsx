@@ -28,70 +28,27 @@ const Home = () => {
             </h3>
             <BrochureComponent />
           </div>
-          <div className="w-full h-2/5 mb-20 px-[10%] flex flex-col justify-end items-center">
-            {/* <div className="card w-full h-[85%] backdrop-blur-sm bg-white/15 rounded-3xl max-w-[412px] p-3 min-w-[400px]">
-              <div className="w-full h-[62.5%] flex justify-between">
-                <img
-                  src={maintainence}
-                  alt="Description of Image"
-                  className="w-[72.5%] h-full object-cover rounded-2xl border border-white"
-                />
-                <div className="w-8 h-8">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="24px"
-                    viewBox="0 -960 960 960"
-                    width="24px"
-                    fill="#e8eaed"
-                  >
-                    <path d="M222.72-391.52q-36.63 0-62.68-25.99Q134-443.5 134-480q0-36.96 25.99-62.72 25.99-25.76 62.49-25.76 36.73 0 62.88 25.76 26.16 25.76 26.16 62.44 0 36.67-26.08 62.72-26.09 26.04-62.72 26.04Zm257.56 0q-36.67 0-62.72-25.99-26.04-25.99-26.04-62.49 0-36.96 25.99-62.72 25.99-25.76 62.49-25.76 36.96 0 62.72 25.76 25.76 25.76 25.76 62.44 0 36.67-25.76 62.72-25.76 26.04-62.44 26.04Zm257.4 0q-36.79 0-63-25.99-26.2-25.99-26.2-62.49 0-36.96 26.2-62.72 26.21-25.76 63-25.76 36.8 0 62.56 25.76Q826-516.96 826-480.28q0 36.67-25.76 62.72-25.76 26.04-62.56 26.04Z" />
-                  </svg>
-                </div>
-              </div>
-              <div className="flex justify-between items-center pl-1 h-[37.5%]">
-                <div className="text-2xl w-[72%] mt-1 font-medium text-white">
-                  Discover our <br /> latest projects
-                  <p className="text-wrap text-xs mt-1 font-normal text-gray-300">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Consequatur veniam!
-                  </p>
-                </div>
-                <div className="w-[25%] h-full flex justify-end items-end">
-                  <div className="bg-white/30 hover:bg-black/40 border border-white w-16 h-16 rounded-full flex justify-center items-center">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      height="32px"
-                      viewBox="0 -960 960 960"
-                      width="32px"
-                      fill="#e8eaed"
-                    >
-                      <path d="M214.87-141.91 140.78-216l456.65-456.65H351.52v-106h426v426h-106v-245.91L214.87-141.91Z" />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-            </div> */}
-          </div>
+          <div className="w-full h-2/5 mb-20 px-[10%] flex flex-col justify-end items-center"></div>
           <div className="w-full h-[120px] flex justify-between">
             <div className="w-[10%] h-full bg-white rounded-tr-xl"></div>
             <div className="w-[80%] h-full flex justify-evenly">
               <AnimatedCounter
-                numsArray={[7]}
-                decoration={"M"}
-                greytext="parts of the world"
-                blacktext="Employees work in all"
-              />
-              <AnimatedCounter
-                numsArray={[250]}
-                decoration={"+"}
-                greytext={"worldwide"}
-                blacktext={"Project completed"}
+                numsArray={[64]}
+                decoration={""}
+                greytext="till date"
+                blacktext="Sites commissioned"
               />
               <AnimatedCounter
                 numsArray={[120]}
-                decoration={"k"}
-                greytext="parts of the world"
-                blacktext="Employees work in all"
+                decoration={"MW"}
+                greytext={"developed"}
+                blacktext={"Worth of assets"}
+              />
+              <AnimatedCounter
+                numsArray={[300]}
+                decoration={"MW+"}
+                greytext="in the Pipeline"
+                blacktext="Worth of Projects"
               />
             </div>
             <div className="w-[10%] h-full bg-white rounded-tl-xl"></div>
@@ -110,53 +67,10 @@ const Home = () => {
             </div>
           </div>
           <div className="w-1/2 h-full flex flex-col justify-end">
-            <div className="w-full h-[42.5%] mt-8 flex justify-center">
-              {/* <div className="card w-2/3 h-full rounded-3xl bg-white/10 min-w-[475px] max-w-[550px] min-h-[345px] backdrop-blur-sm border border-white/25 p-3">
-                <div className="w-full h-[62.5%] flex justify-between">
-                  <img
-                    src={maintainence}
-                    alt="Description of Image"
-                    className="w-[72.5%] h-full object-cover rounded-2xl border border-white"
-                  />
-                  <div className="w-8 h-8">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      height="24px"
-                      viewBox="0 -960 960 960"
-                      width="24px"
-                      fill="#e8eaed"
-                    >
-                      <path d="M222.72-391.52q-36.63 0-62.68-25.99Q134-443.5 134-480q0-36.96 25.99-62.72 25.99-25.76 62.49-25.76 36.73 0 62.88 25.76 26.16 25.76 26.16 62.44 0 36.67-26.08 62.72-26.09 26.04-62.72 26.04Zm257.56 0q-36.67 0-62.72-25.99-26.04-25.99-26.04-62.49 0-36.96 25.99-62.72 25.99-25.76 62.49-25.76 36.96 0 62.72 25.76 25.76 25.76 25.76 62.44 0 36.67-25.76 62.72-25.76 26.04-62.44 26.04Zm257.4 0q-36.79 0-63-25.99-26.2-25.99-26.2-62.49 0-36.96 26.2-62.72 26.21-25.76 63-25.76 36.8 0 62.56 25.76Q826-516.96 826-480.28q0 36.67-25.76 62.72-25.76 26.04-62.56 26.04Z" />
-                    </svg>
-                  </div>
-                </div>
-                <div className="flex justify-between items-center pl-1 h-[37.5%]">
-                  <div className="text-2xl w-[72%] mt-1 font-medium text-white">
-                    Discover our <br /> latest projects
-                    <p className="text-wrap text-xs mt-1 font-normal text-gray-300">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Consequatur veniam!
-                    </p>
-                  </div>
-                  <div className="w-[25%] h-full flex justify-end items-end">
-                    <div className="bg-white/30 hover:bg-black/40 border border-white w-16 h-16 rounded-full flex justify-center items-center">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        height="32px"
-                        viewBox="0 -960 960 960"
-                        width="32px"
-                        fill="#e8eaed"
-                      >
-                        <path d="M214.87-141.91 140.78-216l456.65-456.65H351.52v-106h426v426h-106v-245.91L214.87-141.91Z" />
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-              </div> */}
-            </div>
+            <div className="w-full h-[42.5%] mt-8 flex justify-center"></div>
             <div className="w-full h-[27%] bg-white mt-14 rounded-tl-3xl flex justify-evenly">
               <AnimatedCounter
-                numsArray={[4]}
+                numsArray={[64]}
                 decoration={""}
                 greytext="till date"
                 blacktext="Sites commissioned"
@@ -192,32 +106,6 @@ const Home = () => {
         </div>
       </div>
       <ShowcaseScroll />
-      {/* <div className="">
-        <div className="xl:flex-row flex-col flex h-full justify-between xl:px-16 py-8 px-8 gap-5 xl:gap-0 xl:items-center">
-          <div className="xl:w-[69%] xl:h-full h-[48%]">
-            <SolarCalculator />
-          </div>
-
-          <div className="xl:w-[29.5%] xl:h-full h-[50%] bg-white rounded-3xl p-5 flex flex-col">
-            <img
-              src={maintainence}
-              alt="Description of Image"
-              className="h-[369px] w-full object-cover rounded-2xl border border-white"
-            />
-            <h1 className="text-black text-3xl pt-2 w-[90%]">
-              <span className="text-gray-500">Got Questions?</span>
-              <br /> We’re Just One Click Away
-            </h1>
-            <p className="text-wrap mt-10 text-black text-lg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-              dolore harum iste!
-            </p>
-            <button className="bg-green-400 text-white p-2 rounded-full mt-10 px-8 w-[50%]">
-              Get in touch
-            </button>
-          </div>
-        </div>
-      </div> */}
 
       <div className="md:h-[600px] bg-white md:flex items-center justify-center md:px-9 lg:px-16 px-8 py-10">
         <ServicesGrid />

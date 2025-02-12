@@ -1,13 +1,13 @@
-import csp from "../assets/Icons/Services/Untitled-1.png"
-import oap from "../assets/Icons/Services/Untitled-2.png"
-import opex from "../assets/Icons/Services/Untitled-3.png"
-import bess from "../assets/Icons/Services/Untitled-4.png"
-import iot from "../assets/Icons/Services/Untitled-5.png"
+import csp from "../assets/Icons/Services/Untitled-1.png";
+import oap from "../assets/Icons/Services/Untitled-2.png";
+import opex from "../assets/Icons/Services/Untitled-3.png";
+import BESS from "../assets/Icons/Services/Untitled-4.png";
+import iot from "../assets/Icons/Services/Untitled-5.png";
 
 // eslint-disable-next-line react/prop-types
-const ServiceCard = ({ title, description, icon, className = "" }) => (
+const ServiceCard = ({ title, description, icon, link, className = "" }) => (
   <div
-    className={`lg:w-[32%] bg-gray-200 p-9 sm:mb-0 mb-4 rounded-3xl aspect-1 ${className}`}
+    className={`lg:w-[32%] flex flex-col  bg-gray-200 p-9 sm:mb-0 mb-4 rounded-3xl aspect-1 ${className}`}
   >
     <img
       src={icon}
@@ -20,9 +20,12 @@ const ServiceCard = ({ title, description, icon, className = "" }) => (
     <p className="text-[4.5vw] sm:text-[27px] text-gray-600 mb-4 xs:mt-8 xl:mt-10 md:text-[18px] lg:mt-5 xl:text-2xl 2xl:text-[28px] 2xl:leading-[40px]">
       {description}
     </p>
-    <button className="bg-green-400 text-white text- py-3 rounded-full mt-4 px-10 w-[39] text-justify ">
+    <a
+      href={link}
+      className="bg-green-400 text-white py-3 rounded-full mt-4 px-10 w-44 text-justify hover:bg-green-500"
+    >
       Learn more
-    </button>
+    </a>
   </div>
 );
 
@@ -121,28 +124,33 @@ const Services = () => {
               title="Captive Solar Project"
               description="Leverage dedicated solar energy solutions tailored for businesses, ensuring uninterrupted power supply, cost efficiency, and sustainability."
               icon={csp}
+              link="/Services/Captive-Solar-Project"
             />
             <ServiceCard
               title="Open Access Project"
               description="Explore the benefits of solar power through open-access platforms, enabling industries to source clean energy directly from solar producers."
               icon={oap}
+              link="/Services/Open-Access-Project"
             />
             <ServiceCard
               title="OPEX Solutions"
               description="Adopt operational expenditure models for solar installations, minimizing upfront costs and maximizing returns on renewable energy investments."
               icon={opex}
+              link="/Services/Opex-Solution"
             />
           </div>
           <div className="flex gap-3 w-[100%] justify-center">
             <ServiceCard
-              title="Captive Solar Project"
+              title="BESS System"
               description="Leverage dedicated solar energy solutions tailored for businesses, ensuring uninterrupted power supply, cost efficiency, and sustainability."
-              icon={bess}
+              icon={BESS}
+              link="/Services/BESS-System"
             />
             <ServiceCard
-              title="Open Access Project"
+              title="IOT"
               description="Explore the benefits of solar power through open-access platforms, enabling industries to source clean energy directly from solar producers."
               icon={iot}
+              link="/Services/IOT"
             />
           </div>
         </div>
@@ -153,30 +161,35 @@ const Services = () => {
               title="Captive Solar Project"
               description="Leverage dedicated solar energy solutions tailored for businesses, ensuring uninterrupted power supply, cost efficiency, and sustainability."
               icon={csp}
+              link="/Services/Captive-Solar-Project"
             />
             <ServiceCard
               title="Open Access Project"
               description="Explore the benefits of solar power through open-access platforms, enabling industries to source clean energy directly from solar producers."
               icon={oap}
+              link="/Services/Open-Access-Project"
             />
           </div>
           <div className="flex gap-3">
             <ServiceCard
-              title="Captive Solar Project"
-              description="Leverage dedicated solar energy solutions tailored for businesses, ensuring uninterrupted power supply, cost efficiency, and sustainability."
+              title="OPEX Solutions"
+              description="Adopt operational expenditure models for solar installations, minimizing upfront costs and maximizing returns on renewable energy investments."
               icon={opex}
+              link="/Services/Opex-Solution"
             />
             <ServiceCard
-              title="Open Access Project"
-              description="Explore the benefits of solar power through open-access platforms, enabling industries to source clean energy directly from solar producers."
-              icon={bess}
+              title="BESS System"
+              description="Leverage dedicated solar energy solutions tailored for businesses, ensuring uninterrupted power supply, cost efficiency, and sustainability."
+              icon={BESS}
+              link="/Services/BESS-System"
             />
           </div>
           <div className="flex gap-3 w-[50%]">
             <ServiceCard
-              title="Captive Solar Project"
-              description="Leverage dedicated solar energy solutions tailored for businesses, ensuring uninterrupted power supply, cost efficiency, and sustainability."
+              title="IOT"
+              description="Explore the benefits of solar power through open-access platforms, enabling industries to source clean energy directly from solar producers."
               icon={iot}
+              link="/Services/IOT"
             />
           </div>
         </div>
@@ -186,26 +199,31 @@ const Services = () => {
             title="Captive Solar Project"
             description="Leverage dedicated solar energy solutions tailored for businesses, ensuring uninterrupted power supply, cost efficiency, and sustainability."
             icon={csp}
+            link="/Services/Captive-Solar-Project"
           />
           <ServiceCard
             title="Open Access Project"
             description="Explore the benefits of solar power through open-access platforms, enabling industries to source clean energy directly from solar producers."
             icon={oap}
+            link="/Services/Open-Access-Project"
           />
           <ServiceCard
-            title="Captive Solar Project"
-            description="Leverage dedicated solar energy solutions tailored for businesses, ensuring uninterrupted power supply, cost efficiency, and sustainability."
+            title="OPEX Solutions"
+            description="Adopt operational expenditure models for solar installations, minimizing upfront costs and maximizing returns on renewable energy investments."
             icon={opex}
+            link="/Services/Opex-Solution"
           />
           <ServiceCard
-            title="Open Access Project"
-            description="Explore the benefits of solar power through open-access platforms, enabling industries to source clean energy directly from solar producers."
-            icon={bess}
-          />
-          <ServiceCard
-            title="Captive Solar Project"
+            title="BESS System"
             description="Leverage dedicated solar energy solutions tailored for businesses, ensuring uninterrupted power supply, cost efficiency, and sustainability."
+            icon={BESS}
+            link="/Services/BESS-System"
+          />
+          <ServiceCard
+            title="IOT"
+            description="Explore the benefits of solar power through open-access platforms, enabling industries to source clean energy directly from solar producers."
             icon={iot}
+            link="/Services/IOT"
           />
         </div>
 
@@ -214,26 +232,31 @@ const Services = () => {
             title="Captive Solar Project"
             description="Leverage dedicated solar energy solutions tailored for businesses, ensuring uninterrupted power supply, cost efficiency, and sustainability."
             icon={csp}
+            link="/Services/Captive-Solar-Project"
           />
           <ServiceCard
             title="Open Access Project"
             description="Explore the benefits of solar power through open-access platforms, enabling industries to source clean energy directly from solar producers."
             icon={oap}
+            link="/Services/Open-Access-Project"
           />
           <ServiceCard
-            title="Captive Solar Project"
-            description="Leverage dedicated solar energy solutions tailored for businesses, ensuring uninterrupted power supply, cost efficiency, and sustainability."
+            title="OPEX Solutions"
+            description="Adopt operational expenditure models for solar installations, minimizing upfront costs and maximizing returns on renewable energy investments."
             icon={opex}
+            link="/Services/Opex-Solution"
           />
           <ServiceCard
-            title="Open Access Project"
-            description="Explore the benefits of solar power through open-access platforms, enabling industries to source clean energy directly from solar producers."
-            icon={bess}
-          />
-          <ServiceCard
-            title="Captive Solar Project"
+            title="BESS System"
             description="Leverage dedicated solar energy solutions tailored for businesses, ensuring uninterrupted power supply, cost efficiency, and sustainability."
+            icon={BESS}
+            link="/Services/BESS-System"
+          />
+          <ServiceCard
+            title="IOT"
+            description="Explore the benefits of solar power through open-access platforms, enabling industries to source clean energy directly from solar producers."
             icon={iot}
+            link="/Services/IOT"
           />
         </div>
       </div>

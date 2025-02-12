@@ -2,13 +2,16 @@ import arrow from "../assets/SVGs/move-up-right.svg";
 
 const ServicesSection = ({
   // eslint-disable-next-line react/prop-types
-  img = "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Ministra_visita_planta_fotosolar_Cerro_Dominador_%2832536431795%29.jpg/1280px-Ministra_visita_planta_fotosolar_Cerro_Dominador_%2832536431795%29.jpg",
+  img,
   // eslint-disable-next-line react/prop-types
   pageName = "consectetur adipisicing elit",
   // eslint-disable-next-line react/prop-types
   text,
   // eslint-disable-next-line react/prop-types
-  sub
+  sub, 
+
+  // eslint-disable-next-line react/prop-types
+  chotoImg
 }) => {
   return (
     <div className="relative lg:h-[1000px] h-[145vh]">
@@ -28,7 +31,7 @@ const ServicesSection = ({
         <div className="w-full lg:h-[650px] h-[78%] bg-white rounded-3xl lg:flex-row flex-col flex justify-between p-5">
           <div className="lg:h-full h-[51.5%] rounded-3xl lg:w-[69.25%] overflow-hidden">
             <img
-              src="https://icehrm.com/blog/content/images/2023/11/pexels-yan-krukau-7793730-1.jpg"
+              src={chotoImg}
               alt="Solar panels"
               className="w-full h-full object-cover brightness-50"
             />

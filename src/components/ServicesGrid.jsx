@@ -2,7 +2,7 @@ const ServicesGrid = () => {
   const services = [
     {
       id: "01",
-      title: "Solar panels for home",
+      title: "Solar panels for business",
       text: "Explore reliable and cost-effective solar solutions designed to power your home efficiently while reducing energy costs.",
     },
     {

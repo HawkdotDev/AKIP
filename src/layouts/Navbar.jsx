@@ -21,7 +21,11 @@ const Navbar = () => {
       {/* Main Navbar */}
       <nav className="w-full max-w-[1920px] mx-auto flex justify-between items-center px-7 pt-2 fixed z-[99] bg-black/25 xl:backdrop-blur-sm backdrop-blur-md">
         <a href="/">
-          <img src={Logo} alt="PAJVA logo" className="w-[72px] h-[72px] mb-2" />
+          <img
+            src={Logo}
+            alt="PAJVA logo"
+            className="w-[92px] h-[36px] my-7 "
+          />
         </a>
 
         <button
@@ -143,7 +147,7 @@ const Navbar = () => {
 
       {/* Mobile Sliding Navbar */}
       <aside
-        className={`xl:hidden fixed top-[78.65px] left-0 w-full bg-black/25 backdrop-blur-md text-white z-[98] transform transition-transform duration-500 ease-in-out ${
+        className={`xl:hidden fixed pt-7 top-[78.65px] left-0 w-full bg-black/25 backdrop-blur-md text-white z-[98] transform transition-transform duration-500 ease-in-out ${
           isMenuOpen ? "translate-y-0" : "-translate-y-[95vh]"
         }`}
       >
@@ -155,10 +159,10 @@ const Navbar = () => {
             Home
           </a>
           <a
-            href="/Blogs"
+            href="/About"
             className="hover:text-green-500 text-lg h-full w-full hover:bg-black/30 p-4 text-center"
           >
-            Blogs
+            About
           </a>
           {/* Services Section with Dropdown */}
           <div className="w-full">
@@ -221,22 +225,22 @@ const Navbar = () => {
             </div>
           </div>
           <a
-            href="/Media"
+            href="/Blogs"
             className="hover:text-green-500 text-lg h-full w-full hover:bg-black/30 p-4 text-center"
           >
-            Media
-          </a>
-          <a
-            href="/About"
-            className="hover:text-green-500 text-lg h-full w-full hover:bg-black/30 p-4 text-center"
-          >
-            About
+            Blogs
           </a>
           <a
             href="/Careers"
             className="hover:text-green-500 text-lg h-full w-full hover:bg-black/30 p-4 text-center"
           >
             Careers
+          </a>
+          <a
+            href="/Media"
+            className="hover:text-green-500 text-lg h-full w-full hover:bg-black/30 p-4 text-center"
+          >
+            Media
           </a>
           <a
             href="/ContactUs"
